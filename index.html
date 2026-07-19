@@ -1,0 +1,434 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>YASSAD TRAVEL</title>
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="style.css">
+
+    <!-- GOOGLE FONTS -->
+    <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@400;500;600;700&family=Poppins:wght@300;400;500;600&display=swap" rel="stylesheet">
+
+    <!-- ICONS -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+</head>
+
+<body>
+
+    <!-- HERO -->
+    <section class="hero">
+
+        <!-- NAVBAR -->
+        <nav class="navbar">
+
+            <!-- LOGO -->
+            <div class="logo">
+
+                <img src="images/logo-yassad.png" alt="YASSAD Logo">
+
+                <div class="logo-text">
+                    <h1>YASSAD TRAVEL</h1>
+                    <p>STUDY ABROAD MADE EASY</p>
+                </div>
+
+            </div>
+
+            <!-- MENU -->
+            <ul class="nav-links">
+                <li><a href="#" class="active">Accueil</a></li>
+                <li><a href="#destinations">Destinations</a></li>
+                <li><a href="services.html">Services</a></li>
+                <li><a href="#">Témoignages</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+
+            <!-- BUTTON -->
+          
+
+            <a href="https://wa.me/213795544238?text=Bonjour%20YASSAD%20TRAVEL,%20je%20souhaite%20prendre%20un%20rendez-vous%20d'orientation."
+target="_blank"
+class="btn-rdv">
+    Prendre rendez-vous d'orientation
+    <i class="fa-regular fa-calendar"></i>
+</a>
+
+        </nav>
+
+        <!-- HERO CONTENT -->
+        <div class="hero-content">
+
+            <div class="badge">
+                <i class="fa-solid fa-star"></i>
+                VOTRE CONFIANCE EST NOTRE RÉUSSITE!
+            </div>
+
+            <h2>
+                Étudier à l’étranger <br>
+                <span class="gradient">
+                    ouvrir la voie à vos rêves
+                </span>
+            </h2>
+
+            <p>
+                Nous vous accompagnons à chaque étape de votre projet
+                pour étudier à l’étranger en toute confiance.
+            </p>
+            <div class="online-badge">
+    <i class="fa-solid fa-globe"></i>
+    Agence de démarches en ligne
+</div>
+
+            <!-- BUTTONS -->
+            <div class="hero-buttons">
+
+               <a href="#" class="btn-primary" onclick="openPopup()">
+    <i class="fa-solid fa-paper-plane"></i>
+    Commencer maintenant
+</a>
+                <a href="#" class="btn-video">
+                    <i class="fa-regular fa-circle-play"></i>
+                    Regarder la vidéo
+                </a>
+
+            </div>
+
+        </div>
+
+        <!-- FEATURES -->
+        <div class="features">
+
+            <!-- FEATURE 1 -->
+            <div class="feature">
+
+                <i class="fa-solid fa-graduation-cap"></i>
+
+                <div>
+                    <h4>Orientation personnalisée</h4>
+                    <p>Des conseils adaptés à vos ambitions.</p>
+                </div>
+
+            </div>
+
+            <!-- FEATURE 2 -->
+            <div class="feature">
+
+                <i class="fa-regular fa-clipboard"></i>
+
+                <div>
+                    <h4>Démarches simplifiées</h4>
+                    <p>Nous nous occupons de tout.</p>
+                </div>
+
+            </div>
+
+            <!-- FEATURE 3 -->
+            <div class="feature">
+
+                <i class="fa-solid fa-shield-halved"></i>
+
+                <div>
+                    <h4>Accompagnement fiable</h4>
+                    <p>Une équipe à vos côtés.</p>
+                </div>
+
+            </div>
+
+            <!-- FEATURE 4 -->
+            <div class="feature">
+
+                <i class="fa-solid fa-globe"></i>
+
+                <div>
+                    <h4>Universités partenaires</h4>
+                    <p>Des établissements reconnus.</p>
+                </div>
+
+            </div>
+
+        </div>
+
+    </section>
+
+    <!-- DESTINATIONS -->
+    <section class="destinations" id="destinations">
+
+        <!-- LEFT -->
+        <div class="dest-left">
+
+            <div class="mini-title">
+                — NOS DESTINATIONS —
+            </div>
+
+            <h3>
+                Partez à la découverte
+                d’un monde d’opportunités
+            </h3>
+
+            <p>
+                Des destinations d’exception et des universités
+                de renommée mondiale vous attendent.
+            </p>
+
+            <a href="# destinations" class="dest-btn">
+                Voir toutes les destinations →
+            </a>
+
+        </div>
+
+        <!-- RIGHT -->
+        <div class="cards">
+
+            <!-- FRANCE -->
+            <div class="card">
+
+                <img src="images/france.jpg" alt="France">
+
+                <div class="card-content">
+
+                    <h4>🇫🇷 France</h4>
+
+                    <p>
+                        Excellence académique et richesse culturelle.
+                    </p>
+
+                    <a href="france.html">
+                        En savoir plus →
+                    </a>
+
+                </div>
+
+            </div>
+
+            <!-- LITUANIE -->
+            <div class="card">
+
+                <img src="images/Lituanie.jpg" alt="Lituanie">
+
+                <div class="card-content">
+
+                    <h4>🇱🇹 Lituanie</h4>
+
+                    <p>
+                        Une destination moderne et accessible.
+                    </p>
+
+                    <a href="lituanie.html">
+                        En savoir plus →
+                    </a>
+
+                </div>
+
+            </div>
+
+            <!-- BELGIQUE -->
+            <div class="card">
+
+                <img src="images/belgique.jpg" alt="Belgique">
+
+                <div class="card-content">
+
+                    <h4>🇧🇪 Belgique</h4>
+
+                    <p>
+                        Des universités prestigieuses et multiculturelles.
+                    </p>
+
+                    <a href="#">
+                        En savoir plus →
+                    </a>
+
+                </div>
+
+            </div>
+
+            <!-- CHINE -->
+            <div class="card">
+
+                <img src="images/chine.jpg" alt="Chine">
+
+                <div class="card-content">
+
+                    <h4>🇨🇳 Chine</h4>
+
+                    <p>
+                        Innovation, technologie et grandes opportunités.
+                    </p>
+
+                    <a href="#">
+                        En savoir plus →
+                    </a>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </section>
+
+     <div class="contact-cta">
+                <div class="cta-content">
+                    <h4>Vous avez des questions ?</h4>
+                    <p>Notre équipe est disponible pour répondre à toutes vos interrogations.</p>
+                </div>
+<a href="https://wa.me/213795544238?text=Bonjour%20YASSAD%20TRAVEL,%20je%20souhaite%20prendre%20un%20rendez-vous%20d'orientation."
+   target="_blank"
+   class="cta-btn">
+    <i class="fa-solid fa-calendar-check"></i>
+    Réserver une consultation gratuite
+</a>
+            </div>
+
+        </div>
+        
+    </footer>
+    <footer class="contact-footer" id="contact">
+    ...
+</footer>
+        <!-- FOOTER CONTACT -->
+    <footer class="contact-footer" id="contact">
+        <div class="contact-container">
+
+            <div class="contact-header">
+                <div class="mini-title">
+                    — CONTACTEZ-NOUS —
+                </div>
+
+                <h3>
+                    Prêt à réaliser<br>
+                    vos rêves d'études ?
+                </h3>
+
+                <p>
+                    Rejoignez notre communauté et restez informé des dernières opportunités.
+                    Notre équipe est à votre écoute pour vous accompagner.
+                </p>
+            </div>
+
+            <div class="contact-cards">
+
+                <!-- INSTAGRAM -->
+                <a href="https://www.instagram.com/yassad_travel" target="_blank" class="contact-card instagram">
+                    <div class="contact-icon">
+                        <i class="fa-brands fa-instagram"></i>
+                    </div>
+                    <div class="contact-info">
+                        <h4>Instagram</h4>
+                        <p>@yassad_travel</p>
+                    </div>
+                    <div class="contact-arrow">
+                        <i class="fa-solid fa-arrow-right"></i>
+                    </div>
+                </a>
+
+                <!-- TIKTOK -->
+                <a href="https://www.tiktok.com/@yassadtravelenligne" target="_blank" class="contact-card tiktok">
+                    <div class="contact-icon">
+                        <i class="fa-brands fa-tiktok"></i>
+                    </div>
+                    <div class="contact-info">
+                        <h4>TikTok</h4>
+                        <p>@yassadtravelenligne</p>
+                    </div>
+                    <div class="contact-arrow">
+                        <i class="fa-solid fa-arrow-right"></i>
+                    </div>
+                </a>
+
+                <!-- EMAIL -->
+                <a href="mailto:yassadtravel@gmail.com" class="contact-card email">
+                    <div class="contact-icon">
+                        <i class="fa-solid fa-envelope"></i>
+                    </div>
+                    <div class="contact-info">
+                        <h4>Email</h4>
+                        <p>yassadtravel@gmail.com</p>
+                    </div>
+                    <div class="contact-arrow">
+                        <i class="fa-solid fa-arrow-right"></i>
+                    </div>
+                </a>
+
+                <!-- WHATSAPP -->
+              <a href="https://wa.me/213549462589?text=Bonjour%20YASSAD%20TRAVEL,%20je%20souhaite%20obtenir%20des%20informations."
+target="_blank"
+class="contact-card whatsapp">
+                    <div class="contact-icon">
+                        <i class="fa-brands fa-whatsapp"></i>
+                    </div>
+                    <div class="contact-info">
+                        <h4>WhatsApp</h4>
+                        <p>Chattez avec nous</p>
+                    </div>
+                    <div class="contact-arrow">
+                        <i class="fa-solid fa-arrow-right"></i>
+                    </div>
+                </a>
+
+            </div>
+
+           
+
+<div class="bottom-footer">
+    <p>© 2026 YASSAD TRAVEL — Tous droits réservés.</p>
+</div>
+<!-- POPUP DESTINATION -->
+
+<div class="popup-overlay" id="popup">
+
+    <div class="popup-box">
+
+        <span class="close-popup" onclick="closePopup()">×</span>
+
+        <div class="popup-icon">
+            <i class="fa-solid fa-plane-departure"></i>
+        </div>
+
+        <h2>
+            Commencez votre aventure avec YASSAD TRAVEL ✈️
+        </h2>
+
+        <p>
+            Choisissez votre destination et commencez vos démarches 
+            pour réaliser votre projet d'études à l'étranger.
+        </p>
+
+
+        <div class="popup-buttons">
+
+
+            <a href="services.html">
+                📋 Voir les démarches
+            </a>
+
+        </div>
+
+    </div>
+
+</div>
+
+
+<script>
+
+function openPopup(){
+
+    document.getElementById("popup").style.display="flex";
+
+}
+
+
+function closePopup(){
+
+    document.getElementById("popup").style.display="none";
+
+}
+
+</script>
+
+
+</body>
+</html>

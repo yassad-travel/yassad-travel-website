@@ -1,0 +1,1362 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>Étudier en Lituanie | YASSAD TRAVEL</title>
+
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+
+<link rel="stylesheet"
+href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+
+<style>
+
+*{
+margin:0;
+padding:0;
+box-sizing:border-box;
+scroll-behavior:smooth;
+font-family:'Poppins',sans-serif;
+}
+
+body{
+background:#f7f9fc;
+color:#222;
+overflow-x:hidden;
+}
+
+.hero{
+
+min-height:100vh;
+
+background:
+linear-gradient(rgba(0,0,0,.55),rgba(0,0,0,.55)),
+url("images/Lituanie.jpg") center/cover;
+
+display:flex;
+justify-content:center;
+align-items:center;
+text-align:center;
+padding:40px;
+
+}
+
+.hero-content{
+
+max-width:900px;
+color:white;
+animation:fadeUp 1.2s;
+
+}
+
+/* ===== Badge Carte de Séjour ===== */
+
+.badge-sejour{
+
+display:inline-flex;
+align-items:center;
+gap:12px;
+
+padding:15px 28px;
+
+background:linear-gradient(135deg,#f6d365,#fda085);
+
+color:#0d4b8f;
+
+font-weight:700;
+font-size:15px;
+letter-spacing:1px;
+text-transform:uppercase;
+
+border-radius:60px;
+
+box-shadow:0 12px 35px rgba(246,211,101,.45);
+
+animation:pulseBadge 2.5s infinite;
+
+}
+
+.badge-icon{
+
+width:42px;
+height:42px;
+
+display:flex;
+align-items:center;
+justify-content:center;
+
+border-radius:50%;
+background:white;
+
+font-size:20px;
+
+box-shadow:0 5px 15px rgba(0,0,0,.15);
+
+}
+
+@keyframes pulseBadge{
+
+0%{
+transform:scale(1);
+}
+
+50%{
+transform:scale(1.04);
+}
+
+100%{
+transform:scale(1);
+}
+
+}
+
+@media(max-width:768px){
+
+.badge-sejour{
+padding:12px 18px;
+font-size:12px;
+gap:10px;
+}
+
+.badge-icon{
+width:34px;
+height:34px;
+font-size:17px;
+}
+
+}
+
+.hero h1{
+
+font-size:60px;
+margin-bottom:20px;
+
+}
+
+.hero h1 span{
+
+background:linear-gradient(90deg,#f6d365,#fda085);
+
+-webkit-background-clip:text;
+-webkit-text-fill-color:transparent;
+
+}
+
+.hero p{
+
+font-size:20px;
+line-height:1.8;
+
+margin-bottom:35px;
+
+}
+
+.btn{
+
+display:inline-block;
+
+padding:18px 40px;
+
+background:linear-gradient(135deg,#0f9b8e,#38ef7d);
+
+color:white;
+
+border-radius:40px;
+
+text-decoration:none;
+
+font-weight:600;
+
+transition:.4s;
+
+}
+
+.btn:hover{
+
+transform:translateY(-5px);
+
+box-shadow:0 15px 35px rgba(0,0,0,.25);
+
+}
+
+section{
+
+padding:90px 8%;
+
+}
+
+.title{
+
+text-align:center;
+margin-bottom:60px;
+
+}
+
+.title h2{
+
+font-size:42px;
+
+color:#0d4b8f;
+
+margin-bottom:10px;
+
+}
+
+.title p{
+
+color:#666;
+
+}
+
+.grid{
+
+display:grid;
+
+grid-template-columns:repeat(auto-fit,minmax(260px,1fr));
+
+gap:30px;
+
+}
+
+.card{
+
+background:white;
+
+padding:35px;
+
+border-radius:20px;
+
+box-shadow:0 10px 30px rgba(0,0,0,.08);
+
+transition:.4s;
+
+}
+
+.card:hover{
+
+transform:translateY(-10px);
+
+}
+
+.card i{
+
+font-size:45px;
+
+margin-bottom:20px;
+
+background:linear-gradient(135deg,#0f9b8e,#38ef7d);
+
+-webkit-background-clip:text;
+-webkit-text-fill-color:transparent;
+
+}
+
+.card h3{
+
+margin-bottom:15px;
+
+color:#0d4b8f;
+
+}
+
+.card p{
+
+line-height:1.7;
+
+color:#555;
+
+}
+
+.conditions{
+
+background:white;
+
+}
+
+.list{
+
+display:grid;
+
+grid-template-columns:repeat(auto-fit,minmax(350px,1fr));
+
+gap:25px;
+
+}
+
+.item{
+
+background:#eef8ff;
+
+padding:22px;
+
+border-left:6px solid #0f9b8e;
+
+border-radius:15px;
+
+font-size:17px;
+
+font-weight:500;
+
+}
+
+.item i{
+
+color:#0f9b8e;
+
+margin-right:12px;
+
+}
+
+.docs{
+
+background:linear-gradient(135deg,#edf8ff,#ffffff);
+
+}
+
+.timeline{
+
+position:relative;
+
+margin-top:40px;
+
+}
+
+.step{
+
+display:flex;
+
+gap:25px;
+
+margin-bottom:35px;
+
+align-items:flex-start;
+
+}
+
+.number{
+
+width:65px;
+height:65px;
+
+background:linear-gradient(135deg,#0f9b8e,#38ef7d);
+
+border-radius:50%;
+
+display:flex;
+
+justify-content:center;
+
+align-items:center;
+
+font-size:24px;
+
+font-weight:bold;
+
+color:white;
+
+flex-shrink:0;
+
+}
+
+.step-content{
+
+background:white;
+
+padding:25px;
+
+border-radius:18px;
+
+box-shadow:0 10px 25px rgba(0,0,0,.08);
+
+width:100%;
+
+}
+
+.step-content h3{
+
+margin-bottom:12px;
+
+color:#0d4b8f;
+
+}
+
+.prix{
+
+background:#f8fbff;
+
+}
+
+.price-grid{
+
+display:grid;
+
+grid-template-columns:repeat(auto-fit,minmax(260px,1fr));
+
+gap:30px;
+
+}
+
+.price{
+
+background:white;
+
+padding:40px;
+
+text-align:center;
+
+border-radius:25px;
+
+box-shadow:0 10px 30px rgba(0,0,0,.08);
+
+transition:.4s;
+
+}
+
+.price:hover{
+
+transform:scale(1.05);
+
+}
+
+.price h3{
+
+color:#0d4b8f;
+
+margin-bottom:15px;
+
+}
+
+.price span{
+
+display:block;
+
+font-size:40px;
+
+font-weight:bold;
+
+margin:20px 0;
+
+color:#0f9b8e;
+
+}
+
+.warning{
+
+margin-top:60px;
+
+padding:30px;
+
+background:#fff3cd;
+
+border-left:8px solid orange;
+
+border-radius:15px;
+
+font-size:18px;
+
+}
+
+.contact{
+
+background:linear-gradient(135deg,#0d4b8f,#0f9b8e);
+
+color:white;
+
+text-align:center;
+
+padding:90px 20px;
+
+}
+
+.contact h2{
+
+font-size:45px;
+
+margin-bottom:20px;
+
+}
+
+.contact p{
+
+font-size:20px;
+
+margin-bottom:35px;
+
+}
+
+.contact a{
+
+background:white;
+
+color:#0d4b8f;
+
+padding:18px 35px;
+
+border-radius:40px;
+
+text-decoration:none;
+
+font-weight:600;
+
+transition:.4s;
+
+display:inline-block;
+
+}
+
+.contact a:hover{
+
+transform:translateY(-5px);
+
+}
+
+footer{
+
+background:#062344;
+
+color:white;
+
+text-align:center;
+
+padding:25px;
+
+}
+
+@keyframes fadeUp{
+
+from{
+
+opacity:0;
+
+transform:translateY(40px);
+
+}
+
+to{
+
+opacity:1;
+
+transform:translateY(0);
+
+}
+
+}
+
+@media(max-width:768px){
+
+.hero h1{
+
+font-size:42px;
+
+}
+
+.title h2{
+
+font-size:32px;
+
+}
+
+.contact h2{
+
+font-size:32px;
+
+}
+
+}
+/* ==========================================
+   SECTION PAIEMENT LITUANIE
+========================================== */
+
+.payment-section{
+margin-bottom:60px;
+}
+
+.payment{
+background:white;
+padding:50px;
+border-radius:25px;
+box-shadow:0 10px 35px rgba(0,0,0,.08);
+}
+
+.cta{
+background:linear-gradient(135deg,#0d4b8f,#0f9b8e);
+color:white;
+padding:70px 50px;
+border-radius:30px;
+text-align:center;
+box-shadow:0 20px 45px rgba(0,0,0,.15);
+}
+
+.cta h2{
+font-size:2.2rem;
+margin-bottom:20px;
+font-weight:700;
+}
+
+.cta p{
+max-width:850px;
+margin:auto;
+line-height:1.9;
+font-size:1.05rem;
+}
+
+.btn-payment{
+display:inline-block;
+margin-top:35px;
+background:linear-gradient(135deg,#f6d365,#fda085);
+color:#000;
+padding:18px 40px;
+border-radius:50px;
+text-decoration:none;
+font-weight:700;
+font-size:1rem;
+transition:.3s;
+box-shadow:0 10px 30px rgba(0,0,0,.18);
+}
+
+.btn-payment:hover{
+transform:translateY(-4px);
+box-shadow:0 15px 40px rgba(0,0,0,.25);
+}
+
+.cta-note{
+margin-top:30px !important;
+font-size:15px;
+opacity:.95;
+line-height:2;
+}
+
+/* WhatsApp */
+
+.whatsapp{
+
+display:inline-block;
+background:#25D366;
+color:white;
+padding:15px 35px;
+border-radius:50px;
+text-decoration:none;
+font-weight:600;
+margin-top:25px;
+transition:.3s;
+box-shadow:0 10px 25px rgba(37,211,102,.3);
+
+}
+
+.whatsapp:hover{
+
+transform:translateY(-3px);
+
+box-shadow:0 15px 35px rgba(37,211,102,.45);
+
+}
+
+/* RESPONSIVE */
+
+@media(max-width:992px){
+
+.cta{
+
+padding:50px 35px;
+
+}
+
+.payment{
+
+padding:35px;
+
+}
+
+}
+
+@media(max-width:768px){
+
+.cta{
+
+padding:40px 25px;
+
+}
+
+.cta h2{
+
+font-size:1.7rem;
+
+}
+
+.cta p{
+
+font-size:15px;
+
+}
+
+.payment{
+
+padding:25px;
+
+}
+
+.btn-payment,
+.whatsapp{
+
+width:100%;
+max-width:340px;
+text-align:center;
+
+}
+
+}
+
+@media(max-width:480px){
+
+.cta{
+
+padding:30px 18px;
+
+}
+
+.cta h2{
+
+font-size:1.45rem;
+
+}
+
+.cta-note{
+
+font-size:14px;
+
+line-height:1.8;
+
+}
+
+.payment{
+
+padding:20px;
+
+}
+
+}
+
+</style>
+
+</head>
+
+<body>
+
+<section class="hero">
+
+<div class="hero-content">
+
+<div class="badge-sejour">
+    <span> PHASE de CARTE DE SÉJOUR • LITUANIE 🇱🇹</span>
+</div>
+
+<h1>
+Étudier en
+<span>Lituanie</span>
+</h1>
+
+<p>
+
+Découvrez une destination européenne moderne,
+accessible et membre de l'espace Schengen.
+YASSAD TRAVEL vous accompagne dans toutes les démarches
+jusqu'à l'obtention de votre carte de séjour.
+
+</p>
+
+<a href="#paiement" class="btn">
+Commencer les démarches
+</a>
+
+</div>
+
+</section>
+
+<section>
+
+<div class="title">
+
+<h2>Pourquoi choisir la Lituanie ?</h2>
+
+<p>
+Une excellente opportunité pour construire votre avenir.
+</p>
+
+</div>
+
+<div class="grid">
+
+<div class="card">
+
+<i class="fa-solid fa-earth-europe"></i>
+
+<h3>Espace Schengen</h3>
+
+<p>
+Voyagez librement dans les pays de l'espace Schengen pendant vos études.
+</p>
+
+</div>
+
+<div class="card">
+
+<i class="fa-solid fa-graduation-cap"></i>
+
+<h3>Universités reconnues</h3>
+
+<p>
+Des diplômes reconnus à l'international avec une excellente qualité d'enseignement.
+</p>
+
+</div>
+
+<div class="card">
+
+<i class="fa-solid fa-money-bill-wave"></i>
+
+<h3>Coût abordable</h3>
+
+<p>
+Des frais de vie et d'études plus accessibles que dans plusieurs autres pays européens.
+</p>
+
+</div>
+
+<div class="card">
+
+<i class="fa-solid fa-briefcase"></i>
+
+<h3>Opportunités professionnelles</h3>
+
+<p>
+Après vos études, vous pouvez rechercher un emploi pendant une année.
+</p>
+
+</div>
+
+</div>
+
+</section>
+<!-- CONDITIONS -->
+
+<section class="conditions" id="conditions">
+
+<div class="title">
+
+<h2>Conditions d'obtention de la carte de séjour</h2>
+
+<p>
+Les principales conditions pour étudier en Lituanie.
+</p>
+
+</div>
+
+<div class="list">
+
+<div class="item">
+<i class="fa-solid fa-circle-check"></i>
+Attestation de solde bancaire supérieure à <strong>8 000 €</strong>.
+</div>
+
+<div class="item">
+<i class="fa-solid fa-circle-check"></i>
+Casier judiciaire authentifié en Algérie.
+</div>
+
+<div class="item">
+<i class="fa-solid fa-circle-check"></i>
+Lettre d'acceptation de l'université.
+</div>
+
+<div class="item">
+<i class="fa-solid fa-circle-check"></i>
+Dernier diplôme obtenu.
+</div>
+
+<div class="item">
+<i class="fa-solid fa-circle-check"></i>
+Attestation de niveau d'anglais.
+</div>
+
+<div class="item">
+<i class="fa-solid fa-circle-check"></i>
+Entretien avec les services de migration.
+</div>
+
+<div class="item">
+<i class="fa-solid fa-circle-check"></i>
+Frais de vérification du casier : <strong>200 €</strong>.
+</div>
+
+</div>
+
+</section>
+
+<!-- DOCUMENTS -->
+
+<section class="docs">
+
+<div class="title">
+
+<h2>Documents à préparer</h2>
+
+<p>
+Préparez votre dossier conformément aux exigences.
+</p>
+
+</div>
+
+<div class="timeline">
+
+<div class="step">
+
+<div class="number">1</div>
+
+<div class="step-content">
+
+<h3>Tous les documents</h3>
+
+<p>
+
+Tous les documents doivent être traduits en anglais.
+
+</p>
+
+</div>
+
+</div>
+
+<div class="step">
+
+<div class="number">2</div>
+
+<div class="step-content">
+
+<h3>Casier judiciaire</h3>
+
+<p>
+
+Le casier judiciaire doit être authentifié en Algérie.
+
+</p>
+
+</div>
+
+</div>
+
+<div class="step">
+
+<div class="number">3</div>
+
+<div class="step-content">
+
+<h3>Authentification</h3>
+
+<p>
+
+Le document est envoyé à YASSAD TRAVEL pour
+l'authentification en Pologne.
+
+</p>
+
+</div>
+
+</div>
+
+<div class="step">
+
+<div class="number">4</div>
+
+<div class="step-content">
+
+<h3>Traduction officielle</h3>
+
+<p>
+
+Le casier est ensuite traduit en lituanien.
+
+</p>
+
+</div>
+
+</div>
+
+<div class="step">
+
+<div class="number">5</div>
+
+<div class="step-content">
+
+<h3>Coût</h3>
+
+<p>
+
+400 € sans apostille (non remboursable, livraison non incluse)
+
+<br><br>
+
+300 € avec apostille (non remboursable, livraison non incluse)
+
+</p>
+
+</div>
+
+</div>
+
+</div>
+
+</section>
+
+<!-- DEPOT -->
+
+<section>
+
+<div class="title">
+
+<h2>Dépôt du dossier</h2>
+
+<p>
+Votre demande sera déposée dans un centre VFS.
+</p>
+
+</div>
+
+<div class="grid">
+
+<div class="card">
+
+<i class="fa-solid fa-location-dot"></i>
+
+<h3>Turquie</h3>
+
+<p>
+Possibilité de déposer votre dossier dans un centre VFS.
+</p>
+
+</div>
+
+<div class="card">
+
+<i class="fa-solid fa-location-dot"></i>
+
+<h3>Dubaï</h3>
+
+<p>
+Le dépôt peut également être effectué à Dubaï.
+</p>
+
+</div>
+
+<div class="card">
+
+<i class="fa-solid fa-location-dot"></i>
+
+<h3>Azerbaïdjan</h3>
+
+<p>
+Centre VFS disponible pour le dépôt.
+</p>
+
+</div>
+
+<div class="card">
+
+<i class="fa-solid fa-star"></i>
+
+<h3>Notre recommandation</h3>
+
+<p>
+
+VFS Istanbul
+
+<br><br>
+
+Frais d'accompagnement :
+<strong>25 € (non remboursable)</strong>
+
+</p>
+
+</div>
+
+</div>
+
+</section>
+<!-- SERVICES -->
+
+<section>
+
+    <div class="title">
+
+        <h2>Nos services</h2>
+
+        <p>
+            YASSAD TRAVEL vous accompagne durant toute votre procédure.
+        </p>
+
+    </div>
+
+    <div class="grid">
+
+        <div class="card">
+
+            <i class="fa-solid fa-user-plus"></i>
+
+            <h3>Création du compte Migris</h3>
+
+            <p>
+                Nous créons votre compte officiel Migris et configurons votre espace personnel.
+            </p>
+
+        </div>
+
+        <div class="card">
+
+            <i class="fa-solid fa-folder-open"></i>
+
+            <h3>Vérification du dossier</h3>
+
+            <p>
+                Nous vérifions chaque document afin de constituer un dossier complet et conforme.
+            </p>
+
+        </div>
+
+        <div class="card">
+
+            <i class="fa-solid fa-file-circle-check"></i>
+
+            <h3>Insertion des documents</h3>
+
+            <p>
+                Tous vos documents sont correctement intégrés sur la plateforme Migris.
+            </p>
+
+        </div>
+
+        <div class="card">
+
+            <i class="fa-solid fa-video"></i>
+
+            <h3>Préparation à l'entretien</h3>
+
+            <p>
+                Une séance Google Meet avec un conseiller est organisée afin de vous préparer.
+            </p>
+
+        </div>
+
+        <div class="card">
+
+            <i class="fa-solid fa-headset"></i>
+
+            <h3>Suivi personnalisé</h3>
+
+            <p>
+                Nous assurons le suivi administratif de votre dossier jusqu'à la décision finale.
+            </p>
+
+        </div>
+
+        <div class="card">
+
+            <i class="fa-solid fa-handshake-angle"></i>
+
+            <h3>Accompagnement complet</h3>
+
+            <p>
+                Notre équipe reste disponible pour répondre à toutes vos questions.
+            </p>
+
+        </div>
+
+    </div>
+
+</section>
+
+<!-- TARIFS -->
+
+<section class="prix">
+
+    <div class="title">
+
+        <h2>Récapitulatif des tarifs</h2>
+
+        <p>
+            Des tarifs transparents pour chaque étape.
+        </p>
+
+    </div>
+
+    <div class="price-grid">
+
+        <div class="price">
+
+            <i class="fa-solid fa-file-shield" style="font-size:50px;color:#0f9b8e;"></i>
+
+            <h3>Casier judiciaire</h3>
+
+            <span>400 €</span>
+
+            <p>
+               <p> (non remboursable)</p>
+                ou <strong>300 €</strong> avec apostille.
+            </p>
+
+        </div>
+
+        <div class="price">
+
+            <i class="fa-solid fa-plane-departure" style="font-size:50px;color:#0f9b8e;"></i>
+
+            <h3>Visa Turquie</h3>
+
+            <span>25 € </span>
+            <p>(non remboursable)</p>
+
+            <p>
+                Traitement du visa pour le dépôt VFS.
+            </p>
+
+        </div>
+
+        <div class="price">
+
+            <i class="fa-solid fa-graduation-cap" style="font-size:50px;color:#0f9b8e;"></i>
+
+            <h3>Service Migris</h3>
+
+            <span>250 €</span>
+
+            <p>
+               <p>(non remboursable)</p> 
+            
+                Création du compte, préparation à l'entretien et accompagnement.
+            </p>
+
+        </div>
+
+    </div>
+
+    <div class="warning">
+
+        <strong>
+            ⚠️ Important :
+        </strong>
+
+        Le paiement s'effectue avant chaque étape de la procédure.
+
+    </div>
+
+</section>
+
+
+
+
+
+<!-- ==========================
+     PRÊT À COMMENCER
+=========================== -->
+
+<section id="paiement" >
+
+<div class="container">
+
+<div class="cta">
+
+<h2>
+ Prêt à commencer votre projet d'études en Lituanie ?
+</h2>
+
+<p>
+
+Pour lancer votre procédure de carte de séjour en Lituanie,
+consultez nos coordonnées de paiement puis effectuez votre règlement.
+
+Une fois le paiement effectué, envoyez votre reçu via WhatsApp afin que notre équipe puisse ouvrir votre dossier et commencer immédiatement votre accompagnement.
+
+</p>
+
+<a
+href="documents/c"
+target="_blank"
+class="btn-payment">
+
+📄 Télécharger les coordonnées de paiement
+
+</a>
+
+<p class="cta-note">
+
+1️⃣ Téléchargez les coordonnées de paiement<br>
+
+2️⃣ Effectuez votre règlement<br>oordonnees-paiement-yassad-travel.pdf
+
+3️⃣ Envoyez votre reçu via WhatsApp<br>
+
+4️⃣ Nous confirmons votre inscription et lançons votre procédure
+
+</p>
+
+</div>
+
+</div>
+
+</section>
+
+<!-- ==========================
+     PAIEMENT
+=========================== -->
+
+<section class="payment-section">
+
+<div class="container">
+
+<div class="payment">
+
+<h2 class="section-title" style="text-align:center;">
+💳 Paiement et envoi du reçu
+</h2>
+
+<p style="text-align:center;max-width:800px;margin:auto;">
+
+Une fois votre paiement effectué, envoyez votre justificatif via WhatsApp afin que notre équipe puisse vérifier votre règlement et commencer immédiatement votre procédure de séjour en Lituanie.
+
+</p>
+
+<div style="text-align:center;margin-top:30px;">
+
+<a
+href="https://wa.me/213549462589"
+target="_blank"
+class="whatsapp">
+
+📲 Envoyer mon reçu sur WhatsApp
+
+</a>
+
+</div>
+
+<p style="margin-top:25px;text-align:center;font-size:14px;color:#64748b;">
+
+Notre équipe confirme généralement les paiements sous 24 heures ouvrables.
+
+</p>
+
+</div>
+
+</div>
+
+</section>
+
+<footer>
+
+    © 2026 YASSAD TRAVEL — Tous droits réservés.
+
+</footer>
+
+</body>
+
+</html>

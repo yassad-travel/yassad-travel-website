@@ -1,0 +1,248 @@
+
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Écoles Privées - Bientôt Disponible</title>
+
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+
+<style>
+
+*{
+margin:0;
+padding:0;
+box-sizing:border-box;
+font-family:'Poppins',sans-serif;
+}
+
+body{
+height:100vh;
+display:flex;
+justify-content:center;
+align-items:center;
+background:
+radial-gradient(circle at top,#d4af37 0%,#151515 35%,#080808 100%);
+overflow:hidden;
+color:white;
+}
+
+.container{
+text-align:center;
+max-width:800px;
+padding:40px;
+}
+
+.badge{
+display:inline-block;
+padding:10px 20px;
+border-radius:50px;
+background:rgba(212,175,55,.15);
+border:1px solid rgba(212,175,55,.4);
+color:#d4af37;
+font-weight:600;
+margin-bottom:25px;
+backdrop-filter:blur(10px);
+animation:pulse 2s infinite;
+}
+
+.icon{
+font-size:100px;
+margin-bottom:20px;
+animation:float 4s ease-in-out infinite;
+}
+
+h1{
+font-size:4.5rem;
+font-weight:800;
+margin-bottom:15px;
+background:linear-gradient(135deg,#fff,#d4af37);
+-webkit-background-clip:text;
+-webkit-text-fill-color:transparent;
+}
+
+.subtitle{
+font-size:1.4rem;
+color:#d4af37;
+font-weight:600;
+margin-bottom:20px;
+}
+
+p{
+font-size:1.1rem;
+line-height:1.9;
+color:#d8d8d8;
+max-width:700px;
+margin:auto;
+}
+
+.glow{
+width:220px;
+height:220px;
+background:#d4af37;
+position:absolute;
+border-radius:50%;
+filter:blur(120px);
+opacity:.15;
+z-index:-1;
+}
+
+.btn{
+display:inline-block;
+margin-top:40px;
+padding:16px 40px;
+border-radius:50px;
+text-decoration:none;
+background:linear-gradient(135deg,#d4af37,#f5d76e);
+color:#000;
+font-weight:700;
+transition:.3s;
+}
+
+.btn:hover{
+transform:translateY(-4px);
+box-shadow:0 15px 40px rgba(212,175,55,.35);
+}
+
+@keyframes float{
+0%,100%{transform:translateY(0);}
+50%{transform:translateY(-20px);}
+}
+
+@keyframes pulse{
+0%{transform:scale(1);}
+50%{transform:scale(1.05);}
+100%{transform:scale(1);}
+}
+
+/* ==========================
+   TABLETTES
+========================== */
+
+@media (max-width:768px){
+
+.container{
+    width:92%;
+    padding:20px;
+}
+
+.icon{
+    font-size:80px;
+}
+
+h1{
+    font-size:3rem;
+}
+
+.subtitle{
+    font-size:1.2rem;
+}
+
+p{
+    font-size:1rem;
+    line-height:1.8;
+}
+
+.btn{
+    padding:15px 35px;
+    font-size:15px;
+}
+
+.glow{
+    width:170px;
+    height:170px;
+    filter:blur(90px);
+}
+
+}
+/* ==========================
+   SMARTPHONES
+========================== */
+
+@media (max-width:480px){
+
+body{
+    padding:20px;
+}
+
+.container{
+    padding:10px;
+}
+
+.badge{
+    font-size:12px;
+    padding:8px 16px;
+}
+
+.icon{
+    font-size:65px;
+    margin-bottom:15px;
+}
+
+h1{
+    font-size:2.2rem;
+    line-height:1.2;
+}
+
+.subtitle{
+    font-size:1rem;
+}
+
+p{
+    font-size:.95rem;
+    line-height:1.7;
+}
+
+.btn{
+    width:100%;
+    padding:15px;
+    font-size:15px;
+}
+
+.glow{
+    width:130px;
+    height:130px;
+    filter:blur(70px);
+}
+
+}
+
+</style>
+</head>
+
+<body>
+
+<div class="glow"></div>
+
+<div class="container">
+
+<div class="badge">
+🚀 NOUVEAU SERVICE EN PRÉPARATION
+</div>
+
+<div class="icon">
+🎓
+</div>
+
+<h1>Coming Soon</h1>
+
+<div class="subtitle">
+Écoles Privées en France
+</div>
+
+<p>
+Nous préparons actuellement une nouvelle offre dédiée aux candidatures
+dans les écoles privées françaises. Cette section sera prochainement
+disponible avec un accompagnement complet et personnalisé.
+</p>
+
+<a href="index.html" class="btn">
+← Retour à l'accueil
+</a>
+
+</div>
+
+</body>
+</html>
+

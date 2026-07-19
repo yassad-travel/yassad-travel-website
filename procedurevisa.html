@@ -1,0 +1,1285 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>Procédure Visa | YASSAD TRAVEL</title>
+
+
+<style>
+
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family:'Poppins','Segoe UI',sans-serif;
+}
+
+
+body{
+
+    background:
+    linear-gradient(135deg,#fffaf0,#f7ecd2);
+
+    color:#333;
+
+    overflow-x:hidden;
+
+}
+
+
+
+/* HERO */
+
+
+.hero{
+
+    height:380px;
+
+    display:flex;
+
+    align-items:center;
+
+    justify-content:center;
+
+    text-align:center;
+
+
+    background:
+
+    linear-gradient(
+        135deg,
+        rgba(154, 101, 49, 0.85),
+        rgba(255,250,240,.85)
+    ),
+
+    url("visa.jpg");
+
+
+    background-size:cover;
+
+    background-position:center;
+
+
+    animation:show 1.5s ease;
+
+
+}
+
+
+
+.hero h1{
+
+
+    font-size:55px;
+
+    color:white;
+
+    text-shadow:
+    0 5px 15px #9b7600;
+
+
+    animation:float 3s infinite;
+
+
+}
+
+
+
+.hero p{
+
+    margin-top:20px;
+
+    font-size:20px;
+
+    color:#fff;
+
+
+}
+
+
+
+/* CONTAINER */
+
+
+.container{
+
+    width:88%;
+
+    margin:60px auto;
+
+
+}
+
+
+
+
+
+/* INTRO */
+
+
+.intro{
+
+
+    background:
+
+    linear-gradient(
+    120deg,
+    #ffffff,
+    #fff4d6
+    );
+
+
+    padding:35px;
+
+    border-radius:25px;
+
+
+    box-shadow:
+
+    0 20px 40px rgba(0,0,0,.1);
+
+
+    border:1px solid #e3c35b;
+
+
+    animation:up 1s ease;
+
+
+
+}
+
+
+
+.intro p{
+
+font-size:18px;
+
+line-height:1.8;
+
+}
+
+
+
+
+/* TITRES */
+
+
+.title{
+
+
+text-align:center;
+
+font-size:35px;
+
+margin:55px 0 35px;
+
+
+background:
+
+linear-gradient(
+90deg,
+#b8860b,
+#ffd700
+);
+
+
+-webkit-background-clip:text;
+
+color:transparent;
+
+
+}
+
+.section-title{
+    text-align:center;
+    font-size:2.2rem;
+    margin-bottom:20px;
+    color:#b8860b;
+    font-weight:700;
+}
+
+
+
+/* CARDS */
+
+
+.cards{
+
+
+display:flex;
+
+justify-content:center;
+
+gap:30px;
+
+flex-wrap:wrap;
+
+
+}
+
+
+
+
+
+.card{
+
+
+width:300px;
+
+padding:35px 25px;
+
+
+background:
+
+linear-gradient(
+145deg,
+rgba(255,255,255,.9),
+rgba(255,245,210,.8)
+);
+
+
+border-radius:25px;
+
+
+text-align:center;
+
+
+box-shadow:
+
+0 15px 35px rgba(0,0,0,.12);
+
+
+border:1px solid #e5c45a;
+
+
+transition:.5s;
+
+
+animation:zoom 1s ease;
+
+
+}
+
+
+
+.card:hover{
+
+
+transform:
+
+translateY(-15px)
+scale(1.03);
+
+
+
+box-shadow:
+
+0 20px 45px rgba(212,175,55,.45);
+
+
+}
+
+
+
+
+.icon{
+    width:130px;
+    height:130px;
+
+    margin:0 auto;
+
+    display:flex;
+    justify-content:center;
+    align-items:center;
+
+    font-size:60px;
+
+    border-radius:50%;
+
+    background:linear-gradient(135deg,#f6e7b5,#e9cc67);
+
+    box-shadow:0 10px 25px rgba(212,175,55,.25);
+}
+
+
+
+
+
+.card h3{
+
+
+margin:20px 0;
+
+color:#b8860b;
+
+font-size:22px;
+
+
+}
+
+
+
+
+
+.card p{
+
+line-height:1.6;
+
+}
+
+
+
+
+/* IMPORTANT BOX */
+
+
+.info{
+
+
+margin-top:50px;
+
+
+padding:35px;
+
+
+background:
+
+linear-gradient(
+135deg,
+#fff,
+#fff1c4
+);
+
+
+
+border-radius:25px;
+
+
+border-left:8px solid #d4af37;
+
+
+box-shadow:
+
+0 15px 30px rgba(0,0,0,.1);
+
+
+animation:up 1.2s;
+
+
+}
+
+
+
+
+.info h2{
+
+color:#b8860b;
+
+margin-bottom:15px;
+
+}
+
+
+
+
+
+/* PRIX */
+
+
+.price{
+
+
+margin-top:50px;
+
+
+padding:45px;
+
+
+border-radius:30px;
+
+
+background:
+
+linear-gradient(
+135deg,
+#1c1c1c,
+#5c4300
+);
+
+
+color:white;
+
+
+text-align:center;
+
+
+box-shadow:
+
+0 20px 40px rgba(0,0,0,.3);
+
+
+animation:zoom 1s;
+
+
+
+}
+
+
+
+
+.price h2{
+
+
+color:#ffd700;
+
+font-size:30px;
+
+
+}
+
+
+
+.price strong{
+
+
+display:block;
+
+margin:20px;
+
+
+font-size:50px;
+
+
+color:#fff;
+
+
+text-shadow:
+
+0 0 20px #ffd700;
+
+
+}
+
+
+
+
+
+.services{
+
+
+margin-top:25px;
+
+text-align:left;
+
+
+}
+
+
+
+.services p{
+
+
+padding:10px;
+
+font-size:17px;
+
+
+}
+
+
+
+
+
+/* COMPLEMENT */
+
+
+.complement{
+
+
+margin-top:50px;
+
+
+padding:35px;
+
+
+background:white;
+
+
+border-radius:25px;
+
+
+box-shadow:
+
+0 15px 30px rgba(0,0,0,.1);
+
+
+
+animation:up 1.5s;
+
+
+}
+
+
+
+.complement h2{
+
+
+color:#b8860b;
+
+margin-bottom:15px;
+
+
+}
+
+
+
+
+
+/* ANIMATIONS */
+
+
+@keyframes up{
+
+from{
+
+opacity:0;
+
+transform:translateY(60px);
+
+}
+
+
+to{
+
+opacity:1;
+
+transform:translateY(0);
+
+}
+
+}
+
+
+
+@keyframes zoom{
+
+from{
+
+opacity:0;
+
+transform:scale(.8);
+
+}
+
+to{
+
+opacity:1;
+
+transform:scale(1);
+
+}
+
+}
+
+
+
+
+@keyframes show{
+
+
+from{
+
+opacity:0;
+
+}
+
+
+to{
+
+opacity:1;
+
+}
+
+
+}
+
+
+
+
+@keyframes float{
+
+
+0%,100%{
+
+transform:translateY(0);
+
+}
+
+
+50%{
+
+transform:translateY(-10px);
+
+}
+
+
+}
+
+
+
+
+/* ==========================
+   TABLETTES
+========================== */
+
+@media (max-width:768px){
+
+.hero{
+height:auto;
+padding:80px 20px;
+}
+
+.hero h1{
+font-size:40px;
+}
+
+.hero p{
+font-size:18px;
+line-height:1.7;
+}
+
+.container{
+width:92%;
+margin:40px auto;
+}
+
+.intro,
+.info,
+.price,
+.complement,
+.payment{
+padding:30px;
+}
+
+.cards{
+gap:20px;
+}
+
+.card{
+width:100%;
+max-width:420px;
+}
+
+.title{
+font-size:30px;
+}
+
+.price strong{
+font-size:42px;
+}
+
+.cta{
+padding:45px 25px;
+}
+
+.cta h2{
+font-size:1.8rem;
+}
+
+.btn-payment{
+width:100%;
+text-align:center;
+}
+
+}
+
+/* ==========================
+   SMARTPHONES
+========================== */
+
+@media (max-width:480px){
+
+.hero{
+padding:60px 18px;
+}
+
+.hero h1{
+font-size:30px;
+line-height:1.3;
+}
+
+.hero p{
+font-size:16px;
+line-height:1.8;
+}
+
+.container{
+width:94%;
+}
+
+.title{
+font-size:26px;
+}
+
+.intro p,
+.info p,
+.complement p,
+.services p{
+font-size:15px;
+}
+
+.card{
+padding:25px 20px;
+}
+
+.icon{
+font-size:45px;
+padding:12px;
+}
+
+.card h3{
+font-size:20px;
+}
+
+.price{
+padding:30px 20px;
+}
+
+.price h2{
+font-size:24px;
+}
+
+.price strong{
+font-size:36px;
+}
+
+.cta{
+padding:35px 20px;
+}
+
+.cta h2{
+font-size:1.5rem;
+}
+
+.cta p{
+font-size:.95rem;
+line-height:1.8;
+}
+
+.btn-payment{
+width:100%;
+padding:16px;
+font-size:15px;
+}
+
+.whatsapp{
+width:100%;
+text-align:center;
+}
+
+footer{
+padding:25px 15px;
+font-size:14px;
+}
+
+}
+
+
+/* WHATSAPP */
+
+.whatsapp{
+display:inline-block;
+background:#25D366;
+color:white !important;
+padding:15px 35px;
+border-radius:50px;
+text-decoration:none;
+font-weight:600;
+margin-top:20px;
+transition:all .3s ease;
+box-shadow:0 10px 25px rgba(37,211,102,.25);
+}
+
+.whatsapp:hover{
+transform:translateY(-3px);
+box-shadow:0 15px 35px rgba(37,211,102,.35);
+}
+
+footer{
+text-align:center;
+padding:30px;
+color:#64748b;
+}
+.payment{
+background:white;
+padding:50px;
+border-radius:25px;
+box-shadow:0 10px 35px rgba(0,0,0,.08);
+}
+
+.cta{
+background:linear-gradient(135deg,#c7bd92,#d8dade);
+color:white;
+padding:70px 50px;
+border-radius:30px;
+text-align:center;
+box-shadow:0 20px 45px rgba(0,0,0,.15);
+}
+
+.cta h2{
+font-size:2.2rem;
+margin-bottom:20px;
+font-weight:700;
+}
+
+.cta p{
+max-width:850px;
+margin:auto;
+line-height:1.9;
+font-size:1.05rem;
+}
+
+.btn-payment{
+display:inline-block;
+margin-top:35px;
+background : linear-gradient(135deg,#ab942d,#6078a9);
+color:#f7f2f2;
+padding:18px 40px;
+border-radius:50px;
+text-decoration:none;
+font-weight:700;
+font-size:1rem;
+transition:.3s;
+box-shadow:0 10px 30px rgba(125, 116, 89, 0.35);
+}
+
+.btn-payment:hover{
+transform:translateY(-4px);
+box-shadow:0 15px 40px rgba(212,175,55,.45);
+}
+
+.cta-note{
+margin-top:30px !important;
+font-size:15px;
+opacity:.95;
+line-height:2;
+}
+
+.payment-section{
+margin-bottom:60px;
+}
+
+
+
+</style>
+
+</head>
+
+
+
+
+<body>
+
+
+
+
+<section class="hero">
+
+
+<div>
+
+
+<h1>✨ Procédure de Visa ✨</h1>
+
+
+<p>
+
+Votre réussite commence avec un accompagnement professionnel
+
+</p>
+
+
+</div>
+
+
+</section>
+
+
+
+
+
+
+<div class="container">
+
+
+
+
+
+<div class="intro">
+
+
+<p>
+
+🌍 Une fois votre admission obtenue, <b>YASSAD TRAVEL</b> vous accompagne dans la préparation complète de votre demande de visa étudiant afin de constituer un dossier conforme aux exigences consulaires.
+
+</p>
+
+
+</div>
+
+
+
+
+
+
+<h2 class="title">
+
+📋 Éléments du dossier
+
+</h2>
+
+
+
+
+
+
+<div class="cards">
+
+
+
+<div class="card">
+
+<div class="icon">
+
+👤
+
+</div>
+
+
+<h3>Dossier personnel</h3>
+
+
+<p>
+
+✅ Préparation et vérification des documents personnels nécessaires.
+
+</p>
+
+
+</div>
+
+
+
+
+
+
+<div class="card">
+
+<div class="icon">
+
+🏡
+
+</div>
+
+
+<h3>Hébergement</h3>
+
+
+<p>
+
+✅ Dossier d'hébergement ou réservation d'hôtel selon votre situation.
+
+</p>
+
+
+</div>
+
+
+
+
+
+
+
+<div class="card">
+
+<div class="icon">
+
+💳
+
+</div>
+
+
+<h3>Garants financiers</h3>
+
+
+<p>
+
+✅ Organisation des justificatifs financiers demandés.
+
+</p>
+
+
+</div>
+
+
+
+
+</div>
+
+
+
+
+
+
+
+
+<div class="info">
+
+
+<h2>
+
+📌 Important
+
+</h2>
+
+
+<p>
+
+
+Dès votre inscription auprès de notre agence, vous recevrez un guide détaillé de la procédure de visa.
+
+
+<br><br>
+
+
+Ce guide contient :
+
+
+<br>
+
+📄 Liste complète des pièces à fournir
+
+<br>
+
+📌 Conditions à respecter
+
+<br>
+
+⭐ Toutes les informations nécessaires pour préparer votre dossier dans les meilleures conditions.
+
+
+</p>
+
+
+
+</div>
+
+
+
+
+
+
+
+
+
+<div class="price">
+
+
+<h2>
+
+🤝 Frais d'accompagnement YASSAD TRAVEL
+
+</h2>
+
+
+
+<strong>
+
+15 000 DA
+
+</strong>
+
+
+<p>
+
+≈ 55 € (non remboursables)
+
+</p>
+
+
+
+
+<div class="services">
+
+
+<p>
+
+✅ Accompagnement complet pour la préparation du dossier visa.
+
+</p>
+
+
+<p>
+
+✅ Vérification des documents personnels, hébergement et garants financiers.
+
+</p>
+
+
+<p>
+
+✅ Transmission d'un guide détaillé avec toutes les consignes.
+
+</p>
+
+
+</div>
+
+
+
+</div>
+
+
+
+
+
+
+
+
+<div class="complement">
+
+
+<h2>
+
+📌 Frais complémentaires
+
+</h2>
+
+
+<p>
+
+
+Les frais liés à une éventuelle réservation d'hôtel ne sont pas inclus dans ce tarif.
+
+
+<br><br>
+
+
+Ils sont calculés selon la situation et les besoins de chaque candidat.
+
+
+</p>
+
+
+</div>
+
+
+
+
+
+
+</div>
+
+<section>
+
+<div class="container">
+<section>
+
+<div class="container">
+<section>
+
+<div class="container">
+
+<div class="cta">
+
+<h2>
+🎓 Prêt à commencer votre projet d'études en France ?
+</h2>
+
+<p>
+Pour finaliser votre inscription à notre accompagnement Campus France,
+consultez nos coordonnées de paiement puis effectuez votre règlement.
+
+Une fois le paiement effectué, il vous suffira d'envoyer votre reçu via WhatsApp afin que nous puissions ouvrir votre dossier et débuter votre accompagnement.
+</p>
+
+<a
+href="documents/coordonnees-paiement-yassad-travel.pdf"
+target="_blank"
+class="btn-payment">
+
+📄 Télécharger les coordonnées de paiement
+
+</a>
+
+<p class="cta-note">
+
+1️⃣ Téléchargez les coordonnées de paiement<br>
+2️⃣ Effectuez votre règlement<br>
+3️⃣ Envoyez votre reçu via WhatsApp<br>
+4️⃣ Nous confirmons votre inscription
+
+</p>
+
+</div>
+
+</div>
+
+</section>
+
+
+<section class="payment-section">
+
+<div class="container">
+
+<div class="payment">
+
+<h2 class="section-title">
+💳 Paiement et envoi du reçu
+</h2>
+
+<p style="text-align:center;max-width:800px;margin:auto;">
+Une fois votre paiement effectué, envoyez votre justificatif via WhatsApp afin que notre équipe puisse vérifier votre règlement et lancer immédiatement votre accompagnement Campus France.
+</p>
+
+<div style="text-align:center;margin-top:30px;">
+
+<a
+href="https://wa.me/213549462589"
+target="_blank"
+class="whatsapp">
+
+📲 Envoyer mon reçu sur WhatsApp
+
+</a>
+
+</div>
+
+<p style="
+margin-top:25px;
+text-align:center;
+font-size:14px;
+color:#64748b;
+">
+Notre équipe confirme généralement les inscriptions sous 24 heures.
+</p>
+
+</div>
+
+</div>
+
+</section>
+<footer>
+
+© 2026 YASSAD TRAVEL — Accompagnement Campus France
+
+</footer>
+
+
+</body>
+
+</html>

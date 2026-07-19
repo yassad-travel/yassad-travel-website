@@ -1,0 +1,1646 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>Admission en Lituanie | YASSAD TRAVEL</title>
+
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+
+<link rel="stylesheet"
+href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+
+<style>
+
+*{
+margin:0;
+padding:0;
+box-sizing:border-box;
+font-family:'Poppins',sans-serif;
+scroll-behavior:smooth;
+}
+
+body{
+background:#f7f9fc;
+color:#222;
+overflow-x:hidden;
+}
+
+:root{
+
+--blue:#0d4b8f;
+--green:#0f9b8e;
+--green2:#38ef7d;
+--gold:#f6d365;
+--orange:#fda085;
+
+}
+
+.hero{
+
+min-height:100vh;
+
+background:
+linear-gradient(rgba(0,0,0,.60),rgba(0,0,0,.60)),
+url("images/Lituanie.jpg") center/cover;
+
+display:flex;
+justify-content:center;
+align-items:center;
+text-align:center;
+padding:40px;
+
+}
+
+.hero-content{
+
+max-width:900px;
+color:white;
+animation:fadeUp 1.2s;
+
+}
+
+.badge{
+
+display:inline-flex;
+align-items:center;
+justify-content:center;
+gap:10px;
+
+padding:14px 28px;
+
+border-radius:60px;
+
+background:linear-gradient(135deg,#FFD54F,#FF9800);
+
+color:#fff;
+
+font-size:15px;
+font-weight:700;
+letter-spacing:1px;
+text-transform:uppercase;
+text-align:center;
+
+box-shadow:0 10px 30px rgba(255,152,0,.35);
+
+margin-bottom:30px;
+
+animation:pulseBadge 2s infinite;
+
+}
+
+
+
+@keyframes pulseBadge{
+
+0%{
+transform:scale(1);
+box-shadow:0 10px 30px rgba(255,152,0,.35);
+}
+
+50%{
+transform:scale(1.05);
+box-shadow:0 18px 40px rgba(255,152,0,.55);
+}
+
+100%{
+transform:scale(1);
+box-shadow:0 10px 30px rgba(255,152,0,.35);
+}
+
+}
+
+.hero h1{
+
+font-size:60px;
+
+margin-bottom:20px;
+
+font-weight:800;
+
+}
+
+.hero h1 span{
+
+background:linear-gradient(90deg,#f6d365,#fda085);
+
+-webkit-background-clip:text;
+-webkit-text-fill-color:transparent;
+
+}
+
+.hero p{
+
+font-size:20px;
+
+line-height:1.9;
+
+margin-bottom:40px;
+
+}
+
+.btn{
+
+display:inline-block;
+
+padding:18px 40px;
+
+border-radius:50px;
+
+background:linear-gradient(135deg,var(--green),var(--green2));
+
+color:white;
+
+text-decoration:none;
+
+font-weight:600;
+
+transition:.35s;
+
+box-shadow:0 12px 30px rgba(0,0,0,.25);
+
+}
+
+.btn:hover{
+
+transform:translateY(-5px);
+
+}
+
+section{
+
+padding:90px 8%;
+
+}
+
+.container{
+
+max-width:1200px;
+
+margin:auto;
+
+}
+
+.title{
+
+text-align:center;
+
+margin-bottom:60px;
+
+}
+
+.title h2{
+
+font-size:42px;
+
+color:var(--blue);
+
+margin-bottom:15px;
+
+}
+
+.title p{
+
+max-width:850px;
+
+margin:auto;
+
+color:#666;
+
+font-size:15px;
+
+line-height:1.8;
+
+}
+
+.grid{
+
+display:grid;
+
+grid-template-columns:repeat(auto-fit,minmax(320px,1fr));
+
+gap:30px;
+
+}
+
+.card{
+
+background:white;
+
+padding:35px;
+
+border-radius:25px;
+
+box-shadow:0 10px 30px rgba(0,0,0,.08);
+
+transition:.35s;
+
+}
+
+.card:hover{
+
+transform:translateY(-8px);
+
+}
+
+.card i{
+
+font-size:45px;
+
+margin-bottom:20px;
+
+background:linear-gradient(135deg,var(--blue),var(--green));
+
+-webkit-background-clip:text;
+
+-webkit-text-fill-color:transparent;
+
+}
+
+.card h3{
+
+color:var(--blue);
+
+margin-bottom:15px;
+
+font-size:24px;
+
+}
+
+.card p{
+
+line-height:1.8;
+
+color:#555;
+
+}
+
+.list{
+
+display:grid;
+
+grid-template-columns:repeat(auto-fit,minmax(350px,1fr));
+
+gap:25px;
+
+}
+
+.item{
+
+background:white;
+
+padding:25px;
+
+border-left:6px solid var(--green);
+
+border-radius:18px;
+
+box-shadow:0 8px 25px rgba(0,0,0,.07);
+
+font-size:17px;
+
+font-weight:500;
+
+}
+
+.item i{
+
+color:var(--green);
+
+margin-right:12px;
+
+}
+
+.timeline{
+
+margin-top:50px;
+
+}
+
+.step{
+
+display:flex;
+
+gap:25px;
+
+margin-bottom:30px;
+
+align-items:flex-start;
+
+}
+
+.number{
+
+width:65px;
+
+height:65px;
+
+border-radius:50%;
+
+background:linear-gradient(135deg,var(--blue),var(--green));
+
+color:white;
+
+display:flex;
+
+justify-content:center;
+
+align-items:center;
+
+font-size:24px;
+
+font-weight:bold;
+
+flex-shrink:0;
+
+}
+
+.step-content{
+
+background:white;
+
+padding:25px;
+
+border-radius:20px;
+
+box-shadow:0 8px 25px rgba(0,0,0,.08);
+
+width:100%;
+
+}
+
+.step-content h3{
+
+margin-bottom:12px;
+
+color:var(--blue);
+
+}
+
+.step-content p{
+
+line-height:1.8;
+
+color:#555;
+
+}
+/*==========================
+SECTION TARIFS
+==========================*/
+
+.pricing{
+
+background:#f8fbff;
+
+}
+
+.price-grid{
+
+display:grid;
+
+grid-template-columns:repeat(auto-fit,minmax(300px,1fr));
+
+gap:30px;
+
+}
+
+.price-card{
+
+background:white;
+
+padding:40px;
+
+border-radius:25px;
+
+text-align:center;
+
+box-shadow:0 10px 30px rgba(0,0,0,.08);
+
+transition:.35s;
+
+}
+
+.price-card:hover{
+
+transform:translateY(-8px);
+
+}
+
+.price-card i{
+
+font-size:50px;
+
+margin-bottom:20px;
+
+background:linear-gradient(135deg,var(--blue),var(--green));
+
+-webkit-background-clip:text;
+
+-webkit-text-fill-color:transparent;
+
+}
+
+.price-card h3{
+
+color:var(--blue);
+
+margin-bottom:15px;
+
+}
+
+.price{
+
+font-size:42px;
+
+font-weight:700;
+
+color:var(--green);
+
+margin:20px 0;
+
+}
+
+/*==========================
+CTA PAIEMENT
+==========================*/
+
+.cta{
+
+background:linear-gradient(135deg,var(--blue),var(--green));
+
+padding:70px 45px;
+
+border-radius:30px;
+
+text-align:center;
+
+color:white;
+
+box-shadow:0 15px 35px rgba(0,0,0,.15);
+
+}
+
+.cta h2{
+
+font-size:40px;
+
+margin-bottom:20px;
+
+}
+
+.cta p{
+
+max-width:850px;
+
+margin:auto;
+
+line-height:1.9;
+
+font-size:17px;
+
+}
+
+.btn-payment{
+
+display:inline-block;
+
+margin-top:35px;
+
+padding:18px 40px;
+
+border-radius:50px;
+
+text-decoration:none;
+
+font-weight:700;
+
+background:linear-gradient(135deg,#f6d365,#fda085);
+
+color:#000;
+
+transition:.35s;
+
+}
+
+.btn-payment:hover{
+
+transform:translateY(-5px);
+
+}
+
+.cta-note{
+
+margin-top:30px;
+
+line-height:2;
+
+}
+
+/*==========================
+WHATSAPP
+==========================*/
+
+.payment{
+
+background:white;
+
+padding:45px;
+
+border-radius:25px;
+
+box-shadow:0 10px 30px rgba(0,0,0,.08);
+
+}
+
+.whatsapp{
+
+display:inline-block;
+
+margin-top:30px;
+
+padding:16px 35px;
+
+border-radius:50px;
+
+background:#25D366;
+
+color:white;
+
+text-decoration:none;
+
+font-weight:600;
+
+transition:.35s;
+
+}
+
+.whatsapp:hover{
+
+transform:translateY(-5px);
+
+}
+
+/*==========================
+FOOTER
+==========================*/
+
+footer{
+
+background:#052748;
+
+color:white;
+
+padding:25px;
+
+text-align:center;
+
+}
+
+/*==========================
+ANIMATION
+==========================*/
+
+@keyframes fadeUp{
+
+from{
+
+opacity:0;
+
+transform:translateY(40px);
+
+}
+
+to{
+
+opacity:1;
+
+transform:translateY(0);
+
+}
+
+}
+
+/*==========================
+RESPONSIVE
+==========================*/
+
+@media(max-width:992px){
+
+.hero h1{
+
+font-size:48px;
+
+}
+
+.grid,
+.list,
+.price-grid{
+
+grid-template-columns:1fr;
+
+}
+
+}
+
+@media(max-width:768px){
+
+.hero{
+
+padding:30px;
+
+}
+
+.hero h1{
+
+font-size:38px;
+
+}
+
+.hero p{
+
+font-size:16px;
+
+}
+
+.title h2{
+
+font-size:30px;
+
+}
+
+.step{
+
+flex-direction:column;
+
+}
+
+.number{
+
+margin:auto;
+
+}
+
+.btn,
+.btn-payment,
+.whatsapp{
+
+width:100%;
+max-width:340px;
+text-align:center;
+
+}
+
+.cta{
+
+padding:45px 25px;
+
+}
+
+.cta h2{
+
+font-size:30px;
+
+}
+
+}
+
+@media(max-width:480px){
+
+.hero h1{
+
+font-size:30px;
+
+}
+
+.title h2{
+
+font-size:26px;
+
+}
+
+.card,
+.item,
+.payment{
+
+padding:22px;
+
+}
+
+.cta{
+
+padding:35px 18px;
+
+}
+
+.cta h2{
+
+font-size:24px;
+
+}
+
+}
+/*=========================
+ CONDITIONS
+=========================*/
+
+.conditions{
+padding:90px 8%;
+background:#ffffff;
+}
+
+.conditions-grid{
+
+display:grid;
+grid-template-columns:repeat(auto-fit,minmax(260px,1fr));
+gap:30px;
+
+}
+
+.condition-card{
+
+background:white;
+padding:35px;
+border-radius:22px;
+text-align:center;
+box-shadow:0 10px 30px rgba(0,0,0,.08);
+transition:.4s;
+
+}
+
+.condition-card:hover{
+
+transform:translateY(-8px);
+
+}
+
+.condition-icon{
+
+font-size:55px;
+margin-bottom:20px;
+
+}
+
+.condition-card h3{
+
+color:#0d4b8f;
+margin-bottom:15px;
+
+}
+
+.condition-card p{
+
+color:#555;
+line-height:1.8;
+
+}
+
+/*=========================
+ DOCUMENTS
+=========================*/
+
+.documents{
+
+padding:90px 8%;
+background:linear-gradient(135deg,#edf8ff,#ffffff);
+
+}
+
+.documents-grid{
+
+display:grid;
+grid-template-columns:repeat(auto-fit,minmax(320px,1fr));
+gap:30px;
+
+}
+
+.doc-card{
+
+background:white;
+padding:35px;
+border-radius:20px;
+box-shadow:0 10px 30px rgba(0,0,0,.08);
+
+}
+
+.doc-card h3{
+
+color:#0d4b8f;
+margin-bottom:20px;
+
+}
+
+.doc-card ul{
+
+list-style:none;
+
+}
+
+.doc-card li{
+
+margin:15px 0;
+font-size:17px;
+
+}
+
+
+
+
+/*=========================================
+SECTION INFORMATIONS
+=========================================*/
+
+.info-section{
+
+padding:90px 8%;
+background:linear-gradient(135deg,#f8fbff,#ffffff);
+
+}
+
+.info-wrapper{
+
+max-width:1050px;
+margin:auto;
+
+}
+
+.info-box{
+
+background:white;
+border-left:8px solid var(--green);
+border-radius:18px;
+padding:35px 40px;
+margin-bottom:35px;
+box-shadow:0 10px 30px rgba(0,0,0,.08);
+transition:.35s;
+
+}
+
+.info-box:hover{
+
+transform:translateY(-6px);
+
+}
+
+.info-box h3{
+
+display:flex;
+align-items:center;
+gap:12px;
+
+font-size:28px;
+color:var(--blue);
+
+margin-bottom:25px;
+
+}
+
+.info-box h3 i{
+
+color:var(--green);
+
+}
+
+.info-box ul{
+
+list-style:none;
+
+}
+
+.info-box li{
+
+margin-bottom:18px;
+line-height:1.9;
+font-size:17px;
+color:#555;
+
+display:flex;
+align-items:flex-start;
+gap:12px;
+
+}
+
+.info-box li i{
+
+color:var(--green);
+margin-top:6px;
+font-size:15px;
+flex-shrink:0;
+
+}
+
+.info-box strong{
+
+color:var(--blue);
+
+}
+
+/*==========================
+RESPONSIVE TABLETTE
+==========================*/
+
+@media(max-width:768px){
+
+.info-section{
+
+padding:70px 6%;
+
+}
+
+.info-box{
+
+padding:28px;
+
+}
+
+.info-box h3{
+
+font-size:24px;
+
+}
+
+.info-box li{
+
+font-size:15px;
+
+}
+
+}
+
+/*==========================
+RESPONSIVE MOBILE
+==========================*/
+
+@media(max-width:480px){
+
+.info-box{
+
+padding:22px;
+
+}
+
+.info-box h3{
+
+font-size:21px;
+line-height:1.4;
+
+}
+
+.info-box li{
+
+font-size:14px;
+line-height:1.8;
+
+}
+
+}
+
+/*=====================================
+SECTION PAIEMENT
+=====================================*/
+
+.payment-section{
+margin-bottom:60px;
+}
+
+.payment{
+background:white;
+padding:50px;
+border-radius:25px;
+box-shadow:0 10px 35px rgba(0,0,0,.08);
+}
+
+.cta{
+background:linear-gradient(135deg,#0d4b8f,#0f9b8e);
+color:white;
+padding:70px 50px;
+border-radius:30px;
+text-align:center;
+box-shadow:0 20px 45px rgba(0,0,0,.15);
+}
+
+.cta h2{
+font-size:2.2rem;
+margin-bottom:20px;
+font-weight:700;
+
+}
+
+.cta p{
+max-width:850px;
+margin:auto;
+line-height:1.9;
+font-size:1.05rem;
+}
+
+.btn-payment{
+display:inline-block;
+margin-top:35px;
+background:linear-gradient(135deg,#f6d365,#fda085);
+color:#000;
+padding:18px 40px;
+border-radius:50px;
+text-decoration:none;
+font-weight:700;
+font-size:1rem;
+transition:.3s;
+box-shadow:0 10px 30px rgba(0,0,0,.18);
+}
+
+.btn-payment:hover{
+transform:translateY(-4px);
+box-shadow:0 15px 40px rgba(0,0,0,.25);
+}
+
+.cta-note{
+margin-top:30px;
+font-size:15px;
+line-height:2;
+opacity:.95;
+}
+
+.whatsapp{
+display:inline-block;
+background:#25D366;
+color:white;
+padding:15px 35px;
+border-radius:50px;
+text-decoration:none;
+font-weight:600;
+margin-top:25px;
+transition:.3s;
+box-shadow:0 10px 25px rgba(37,211,102,.3);
+}
+
+.whatsapp:hover{
+transform:translateY(-3px);
+box-shadow:0 15px 35px rgba(37,211,102,.45);
+}
+
+/*=====================================
+RESPONSIVE
+=====================================*/
+
+@media(max-width:992px){
+
+.cta{
+padding:50px 35px;
+}
+
+.payment{
+padding:35px;
+}
+
+}
+
+@media(max-width:768px){
+
+.cta{
+padding:40px 25px;
+}
+
+.cta h2{
+font-size:1.8rem;
+}
+
+.cta p{
+font-size:15px;
+}
+
+.payment{
+padding:25px;
+}
+
+.btn-payment,
+.whatsapp{
+width:100%;
+max-width:340px;
+text-align:center;
+}
+
+}
+
+@media(max-width:480px){
+
+.cta{
+padding:30px 18px;
+}
+
+.cta h2{
+font-size:1.5rem;
+}
+
+.cta-note{
+font-size:14px;
+line-height:1.8;
+}
+
+.payment{
+padding:20px;
+}
+
+}
+
+</style>
+
+</head>
+
+<body>
+
+<!-- HERO -->
+
+<section class="hero">
+
+<div class="hero-content">
+
+<div class="badge">
+    Le programme préparatoire d’anglais • LITUANIE 🇱🇹
+</div>
+
+<h1>
+
+Étudier en <span>Lituanie</span>
+
+</h1>
+
+<p>
+
+YASSAD TRAVEL vous accompagne dans toutes les démarches d'inscription au programme préparatoire d'anglais
+</p>
+
+<a href="#paiement" class="btn">
+
+Commencer les démarches
+
+</a>
+
+</div>
+
+</section>
+
+<!-- PRESENTATION -->
+
+<section id="presentation">
+
+<div class="container">
+
+<div class="title">
+
+<h2>
+
+Présentation du programme
+
+</h2>
+
+<p>
+
+Le programme préparatoire d’anglais du collège est intégré à la première année de licence.
+Il permet de perfectionner son anglais en un ou deux semestres, jusqu’à atteindre un niveau
+intermédiaire supérieur, indispensable à la réussite universitaire. Proposé chaque semestre
+(automne et printemps), il se déroule à temps plein.
+</p>
+
+</div>
+
+<div class="grid">
+
+<div class="card">
+
+<i class="fa-solid fa-language"></i>
+
+<h3>
+
+Programme intensif
+
+</h3>
+
+<p>
+
+12 heures de cours par semaine avec des projets individuels et collectifs.
+
+</p>
+
+</div>
+
+<div class="card">
+
+<i class="fa-solid fa-book-open"></i>
+
+<h3>
+
+Compétences développées
+
+</h3>
+
+<p>
+
+Lecture, grammaire, compréhension orale, expression orale et possibilité de suivre d'autres cours selon votre orientation.
+
+</p>
+
+</div>
+
+<div class="card">
+
+<i class="fa-solid fa-calendar-check"></i>
+
+<h3>
+
+Deux rentrées
+
+</h3>
+
+<p>
+
+Le programme est proposé chaque semestre (automne et printemps) en formation à temps plein.
+
+</p>
+
+</div>
+
+</div>
+
+</div>
+
+</section>
+
+<!-- CONDITIONS -->
+
+<section>
+
+<div class="container">
+
+<div class="title">
+
+<h2>
+
+Conditions d'admission
+
+</h2>
+
+<p>
+
+Les principales conditions pour intégrer le programme préparatoire.
+
+</p>
+
+</div>
+
+<div class="list">
+
+<div class="item">
+
+<i class="fa-solid fa-check"></i>
+
+Baccalauréat obtenu depuis moins de 7 ans.
+
+</div>
+
+<div class="item">
+
+<i class="fa-solid fa-check"></i>
+
+Niveau d'anglais recommandé : A2 à B1.
+
+</div>
+
+<div class="item">
+
+<i class="fa-solid fa-check"></i>
+
+Avoir terminé les études secondaires ou supérieures.
+
+</div>
+
+<div class="item">
+
+<i class="fa-solid fa-check"></i>
+
+Bon niveau de communication et compréhension de l'anglais.
+
+</div>
+
+</div>
+
+</div>
+
+</section>
+
+
+
+<!--======================================
+INFORMATIONS IMPORTANTES
+=======================================-->
+
+<section class="info-section">
+
+<div class="container">
+
+<div class="title">
+
+<h2>
+Informations importantes
+</h2>
+
+<p>
+
+Toutes les informations essentielles concernant votre admission universitaire en Lituanie.
+
+</p>
+
+</div>
+
+<div class="info-wrapper">
+
+<!-- Exigences -->
+
+<div class="info-box">
+
+<h3>
+
+<i class="fa-solid fa-graduation-cap"></i>
+
+Exigences académiques
+
+</h3>
+
+<ul>
+
+<li>
+<i class="fa-solid fa-check"></i>
+
+<span>
+<strong>Matières obligatoires :</strong> Mathématiques et Anglais, avec une note supérieure à 50 % dans le dernier diplôme ou examen national.
+</span>
+
+</li>
+
+<li>
+<i class="fa-solid fa-check"></i>
+
+<span>
+<strong>Matières acceptées en équivalence :</strong> Statistiques, Comptabilité, Économie.
+</span>
+
+</li>
+
+</ul>
+
+</div>
+
+<!-- Entretien -->
+
+<div class="info-box">
+
+<h3>
+
+<i class="fa-solid fa-comments"></i>
+
+Entretien de motivation
+
+</h3>
+
+<ul>
+
+<li><i class="fa-solid fa-check"></i><span>Aisance à l’oral</span></li>
+
+<li><i class="fa-solid fa-check"></i><span>Connaissance du domaine d’études</span></li>
+
+<li><i class="fa-solid fa-check"></i><span>Compréhension du système éducatif lituanien et des différences culturelles</span></li>
+
+<li><i class="fa-solid fa-check"></i><span>Clarté du projet d’avenir en lien avec le programme</span></li>
+
+<li><i class="fa-solid fa-check"></i><span>Capacité de réflexion créative</span></li>
+
+</ul>
+
+</div>
+
+<!-- Documents -->
+
+<div class="info-box">
+
+<h3>
+
+<i class="fa-solid fa-folder-open"></i>
+
+Documents requis
+
+</h3>
+
+<ul>
+
+<li><i class="fa-solid fa-check"></i><span>Diplôme du baccalauréat : original, authentifié par le Ministère des Affaires étrangères.</span></li>
+
+<li><i class="fa-solid fa-check"></i><span>Relevés de notes du baccalauréat : relevés officiels, également authentifiés.</span></li>
+
+<li><i class="fa-solid fa-check"></i><span>Traduction en anglais : traduction certifiée du diplôme et des relevés de notes.</span></li>
+
+<li><i class="fa-solid fa-check"></i><span>Test d’anglais EF SET : certificat officiel attestant du niveau linguistique (A1 à C2).</span></li>
+
+</ul>
+
+</div>
+
+<!-- Services -->
+
+<div class="info-box">
+
+<h3>
+
+<i class="fa-solid fa-handshake"></i>
+
+Services de l'agence YASSAD
+
+</h3>
+
+<ul>
+
+<li><i class="fa-solid fa-check"></i><span>Prise en charge complète : accompagnement de la procédure d’admission de A à Z.</span></li>
+
+<li><i class="fa-solid fa-check"></i><span>Création de compte : assistance pour l’ouverture et la gestion du compte étudiant.</span></li>
+
+<li><i class="fa-solid fa-check"></i><span>Vérification des documents : contrôle de conformité.</span></li>
+
+<li><i class="fa-solid fa-check"></i><span>Traduction en anglais : traduction officielle des documents.</span></li>
+
+<li><i class="fa-solid fa-check"></i><span>Rédaction de la lettre de motivation : préparation personnalisée et valorisante.</span></li>
+
+<li><i class="fa-solid fa-check"></i><span>Préparation à l’entretien : entraînement aux questions fréquentes via une session Google Meet avec un conseiller.</span></li>
+
+</ul>
+
+</div>
+
+<!-- Tarifs -->
+
+<div class="info-box">
+
+<h3>
+
+<i class="fa-solid fa-euro-sign"></i>
+
+Frais d'inscription et de scolarité
+
+</h3>
+
+<ul>
+
+<li>
+
+<i class="fa-solid fa-check"></i>
+
+<span>
+
+<strong>Frais d’inscription :</strong> 200 € — non remboursables.
+
+</span>
+
+</li>
+
+<li>
+
+<i class="fa-solid fa-check"></i>
+
+<span>
+
+<strong>Frais de scolarité :</strong> 3 200 € — à régler avant la demande de titre de séjour, remboursables en cas de refus.
+
+</span>
+
+</li>
+
+<li>
+
+<i class="fa-solid fa-check"></i>
+
+<span>
+
+<strong>Frais d’agence :</strong> 70 000 DA = 250 € — non remboursables.
+
+</span>
+
+</li>
+
+</ul>
+
+</div>
+
+</div>
+
+</div>
+
+</section>
+
+<!-- =====================================
+     PRÊT À COMMENCER
+===================================== -->
+
+<section>
+
+<div class="container">
+
+<div class="cta">
+
+<h2>
+🎓 Prêt à commencer votre admission en Lituanie ?
+</h2>
+
+<p>
+
+Pour lancer votre procédure d'admission universitaire en Lituanie,
+consultez nos coordonnées de paiement puis effectuez votre règlement.
+
+Une fois le paiement effectué, envoyez votre reçu via WhatsApp afin que notre équipe puisse ouvrir votre dossier et commencer immédiatement votre accompagnement.
+
+</p>
+
+<a
+href="documents/coordonnees-paiement-yassad-travel.pdf"
+target="_blank"
+class="btn-payment">
+
+📄 Télécharger les coordonnées de paiement
+
+</a>
+
+<p class="cta-note">
+
+1️⃣ Téléchargez les coordonnées de paiement<br>
+
+2️⃣ Effectuez votre règlement<br>
+
+3️⃣ Envoyez votre reçu via WhatsApp<br>
+
+4️⃣ Nous confirmons votre inscription et lançons votre procédure d'admission
+
+</p>
+
+</div>
+
+</div>
+
+</section>
+
+
+<!-- =====================================
+     PAIEMENT
+===================================== -->
+
+<section id="paiement" class="payment-section">
+
+<div class="container">
+
+<div class="payment">
+
+<h2 class="section-title"  style="text-align: center;">
+💳 Paiement et envoi du reçu
+</h2>
+
+<p style="text-align:center;max-width:800px;margin:auto;">
+
+Une fois votre paiement effectué, envoyez votre justificatif via WhatsApp afin que notre équipe puisse vérifier votre règlement et commencer immédiatement votre procédure d'admission en Lituanie.
+
+</p>
+
+<div style="text-align:center;margin-top:30px;">
+
+<a
+href="https://wa.me/213549462589"
+target="_blank"
+class="whatsapp">
+
+📲 Envoyer mon reçu sur WhatsApp
+
+</a>
+
+</div>
+
+<p style="
+margin-top:25px;
+text-align:center;
+font-size:14px;
+color:#64748b;
+">
+
+Notre équipe confirme généralement les paiements sous 24 heures ouvrables.
+
+</p>
+
+</div>
+
+</div>
+
+</section>
+
+
+<footer>
+
+© 2026 YASSAD TRAVEL — Admission universitaire en Lituanie
+
+</footer>
+
+</body>
+</html>

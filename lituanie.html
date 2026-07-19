@@ -1,0 +1,977 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>Lituanie | YASSAD TRAVEL</title>
+
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+
+<link rel="stylesheet"
+href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+
+<style>
+
+*{
+margin:0;
+padding:0;
+box-sizing:border-box;
+font-family:'Poppins',sans-serif;
+scroll-behavior:smooth;
+}
+
+body{
+background:#f6f9fc;
+color:#222;
+overflow-x:hidden;
+}
+
+:root{
+
+--blue:#0d4b8f;
+--green:#0f9b8e;
+--green2:#38ef7d;
+--gold:#f6d365;
+--orange:#fda085;
+--white:#ffffff;
+
+}
+
+/*==========================
+HERO
+==========================*/
+
+.hero{
+
+min-height:100vh;
+
+background:
+linear-gradient(rgba(0,0,0,.60),rgba(0,0,0,.60)),
+url("images/Lituanie.jpg") center/cover;
+
+display:flex;
+justify-content:center;
+align-items:center;
+text-align:center;
+padding:40px;
+
+}
+
+.hero-content{
+
+max-width:900px;
+color:white;
+
+animation:fadeUp 1.2s ease;
+
+}
+
+.badge{
+
+display:inline-block;
+
+padding:12px 24px;
+
+background:rgba(255,255,255,.15);
+
+backdrop-filter:blur(8px);
+
+border-radius:50px;
+
+font-weight:600;
+
+margin-bottom:25px;
+
+}
+
+.hero h1{
+
+font-size:65px;
+font-weight:800;
+margin-bottom:20px;
+
+line-height:1.2;
+
+}
+
+.hero h1 span{
+
+background:linear-gradient(90deg,#f6d365,#fda085);
+
+-webkit-background-clip:text;
+-webkit-text-fill-color:transparent;
+
+}
+
+.hero p{
+
+font-size:20px;
+line-height:1.8;
+
+max-width:850px;
+
+margin:auto;
+
+margin-bottom:40px;
+
+}
+
+.hero-btn{
+
+display:inline-block;
+
+padding:18px 42px;
+
+background:linear-gradient(135deg,var(--green),var(--green2));
+
+color:white;
+
+text-decoration:none;
+
+font-weight:600;
+
+border-radius:50px;
+
+transition:.35s;
+
+box-shadow:0 15px 35px rgba(0,0,0,.25);
+
+}
+
+.hero-btn:hover{
+
+transform:translateY(-5px);
+
+}
+
+/*==========================
+SECTIONS
+==========================*/
+
+section{
+
+padding:90px 8%;
+
+}
+
+.title{
+
+text-align:center;
+
+margin-bottom:70px;
+
+}
+
+.title h2{
+
+font-size:42px;
+
+color:var(--blue);
+
+margin-bottom:15px;
+
+}
+
+.title p{
+
+font-size:18px;
+
+color:#666;
+
+max-width:850px;
+
+margin:auto;
+
+}
+
+/*==========================
+CARDS
+==========================*/
+
+.cards{
+
+display:grid;
+
+grid-template-columns:repeat(auto-fit,minmax(420px,1fr));
+
+gap:35px;
+
+align-items:stretch;
+
+}
+
+.card{
+
+background:white;
+
+border-radius:25px;
+
+overflow:hidden;
+
+box-shadow:0 15px 40px rgba(0,0,0,.08);
+
+transition:.4s;
+
+display:flex;
+
+flex-direction:column;
+
+}
+
+.card:hover{
+
+transform:translateY(-10px);
+
+box-shadow:0 25px 50px rgba(0,0,0,.15);
+
+}
+
+.card-content{
+
+padding:45px;
+
+display:flex;
+
+flex-direction:column;
+
+flex:1;
+
+}
+
+.icon{
+
+width:90px;
+
+height:90px;
+
+border-radius:50%;
+
+background:linear-gradient(135deg,var(--green),var(--green2));
+
+display:flex;
+
+justify-content:center;
+
+align-items:center;
+
+margin:auto;
+
+margin-bottom:25px;
+
+}
+
+.icon i{
+
+font-size:42px;
+
+color:white;
+
+}
+
+.card h3{
+
+text-align:center;
+
+font-size:30px;
+
+color:var(--blue);
+
+margin-bottom:20px;
+
+}
+
+.card p{
+
+text-align:center;
+
+line-height:1.9;
+
+color:#555;
+
+margin-bottom:30px;
+
+}
+
+.card ul{
+
+list-style:none;
+
+margin-bottom:35px;
+
+}
+
+.card ul li{
+
+margin-bottom:16px;
+
+font-size:16px;
+
+display:flex;
+
+align-items:center;
+
+gap:10px;
+
+}
+
+.card ul i{
+
+color:var(--green);
+
+font-size:18px;
+
+min-width:20px;
+
+}
+
+.card-btn{
+
+margin-top:auto;
+
+display:block;
+
+text-align:center;
+
+padding:18px;
+
+border-radius:50px;
+
+text-decoration:none;
+
+font-weight:700;
+
+color:white;
+
+background:linear-gradient(135deg,var(--blue),var(--green));
+
+transition:.35s;
+
+}
+
+.card-btn:hover{
+
+transform:scale(1.03);
+
+}
+/*==========================
+POURQUOI CHOISIR YASSAD
+==========================*/
+
+.why{
+
+background:linear-gradient(135deg,#eef8ff,#ffffff);
+
+}
+
+.features{
+
+display:grid;
+
+grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
+
+gap:30px;
+
+}
+
+.feature{
+
+background:white;
+
+padding:35px;
+
+border-radius:20px;
+
+text-align:center;
+
+box-shadow:0 10px 30px rgba(0,0,0,.08);
+
+transition:.35s;
+
+}
+
+.feature:hover{
+
+transform:translateY(-8px);
+
+}
+
+.feature i{
+
+font-size:45px;
+
+margin-bottom:20px;
+
+background:linear-gradient(135deg,var(--blue),var(--green));
+
+-webkit-background-clip:text;
+
+-webkit-text-fill-color:transparent;
+
+}
+
+.feature h4{
+
+font-size:22px;
+
+margin-bottom:15px;
+
+color:var(--blue);
+
+}
+
+.feature p{
+
+color:#666;
+
+line-height:1.8;
+
+}
+
+/*==========================
+CTA
+==========================*/
+
+.cta{
+
+background:linear-gradient(135deg,var(--blue),var(--green));
+
+color:white;
+
+text-align:center;
+
+border-radius:30px;
+
+padding:70px 40px;
+
+}
+
+.cta h2{
+
+font-size:42px;
+
+margin-bottom:20px;
+
+}
+
+.cta p{
+
+max-width:850px;
+
+margin:auto;
+
+line-height:1.9;
+
+margin-bottom:35px;
+
+font-size:18px;
+
+}
+
+/*==========================
+FOOTER
+==========================*/
+
+footer{
+
+background:#052748;
+
+color:white;
+
+text-align:center;
+
+padding:30px;
+
+font-size:15px;
+
+}
+
+/*==========================
+ANIMATION
+==========================*/
+
+@keyframes fadeUp{
+
+from{
+
+opacity:0;
+
+transform:translateY(50px);
+
+}
+
+to{
+
+opacity:1;
+
+transform:translateY(0);
+
+}
+
+}
+
+/*==========================
+RESPONSIVE TABLETTE
+==========================*/
+
+@media(max-width:992px){
+
+.hero h1{
+
+font-size:50px;
+
+}
+
+.hero p{
+
+font-size:18px;
+
+}
+
+.cards{
+
+grid-template-columns:1fr;
+
+}
+
+.title h2{
+
+font-size:36px;
+
+}
+
+}
+
+/*==========================
+RESPONSIVE MOBILE
+==========================*/
+
+@media(max-width:768px){
+
+section{
+
+padding:70px 6%;
+
+}
+
+.hero{
+
+padding:30px;
+
+}
+
+.hero h1{
+
+font-size:38px;
+
+}
+
+.hero p{
+
+font-size:16px;
+
+}
+
+.title h2{
+
+font-size:30px;
+
+}
+
+.title p{
+
+font-size:16px;
+
+}
+
+.card-content{
+
+padding:30px;
+
+}
+
+.card h3{
+
+font-size:24px;
+
+}
+
+.hero-btn,
+
+.card-btn{
+
+width:100%;
+
+}
+
+.cta{
+
+padding:45px 25px;
+
+}
+
+.cta h2{
+
+font-size:30px;
+
+}
+
+.cta p{
+
+font-size:16px;
+
+}
+
+}
+
+/*==========================
+PETIT TELEPHONE
+==========================*/
+
+@media(max-width:480px){
+
+.hero h1{
+
+font-size:32px;
+
+}
+
+.hero p{
+
+font-size:15px;
+
+}
+
+.badge{
+
+font-size:14px;
+
+}
+
+.cards{
+
+grid-template-columns:1fr;
+
+}
+
+.card{
+
+border-radius:20px;
+
+}
+
+.card-content{
+
+padding:25px;
+
+}
+
+.icon{
+
+width:75px;
+
+height:75px;
+
+}
+
+.icon i{
+
+font-size:34px;
+
+}
+
+.card h3{
+
+font-size:22px;
+
+}
+
+.feature{
+
+padding:25px;
+
+}
+
+.feature h4{
+
+font-size:20px;
+
+}
+
+.cta h2{
+
+font-size:25px;
+
+}
+
+footer{
+
+font-size:14px;
+
+padding:20px;
+
+}
+
+}
+
+</style>
+
+</head>
+
+<body>
+
+<!-- HERO -->
+
+<section class="hero">
+
+<div class="hero-content">
+
+<div class="badge">
+🇱🇹 Destination Lituanie
+</div>
+
+<h1>
+
+Étudier en <span>Lituanie</span>
+
+</h1>
+
+<p>
+
+Choisissez votre parcours et laissez YASSAD TRAVEL vous accompagner à chaque étape de votre projet d'études en Lituanie.
+
+</p>
+
+<a href="#choix" class="hero-btn">
+
+Découvrir les procédures
+
+</a>
+
+</div>
+
+</section>
+
+<!-- CHOIX -->
+
+<section id="choix">
+
+<div class="title">
+
+<h2>
+
+Choisissez votre procédure
+
+</h2>
+
+<p>
+
+Sélectionnez l'étape qui correspond à votre situation afin d'obtenir toutes les informations nécessaires.
+
+</p>
+
+</div>
+
+<div class="cards">
+
+<!-- ADMISSION -->
+
+<div class="card">
+
+<div class="card-content">
+
+<div class="icon">
+
+<i class="fa-solid fa-graduation-cap"></i>
+
+</div>
+
+<h3>
+
+Admission universitaire
+
+</h3>
+
+<p>
+
+Nous vous accompagnons dans toutes les démarches d'admission auprès des universités lituaniennes.
+
+</p>
+
+<ul>
+
+<li><i class="fa-solid fa-check"></i> Choix de l'université</li>
+
+<li><i class="fa-solid fa-check"></i> Constitution du dossier</li>
+
+<li><i class="fa-solid fa-check"></i> Vérification des documents</li>
+
+<li><i class="fa-solid fa-check"></i> Dépôt de candidature</li>
+
+<li><i class="fa-solid fa-check"></i> Suivi jusqu'à l'admission</li>
+
+</ul>
+
+<a href="admissionLituanie.html" class="card-btn">
+
+commencer le programme préparatoire d’anglais
+
+</a>
+
+</div>
+
+</div>
+
+<!-- VISA -->
+
+<div class="card">
+
+<div class="card-content">
+
+<div class="icon">
+
+<i class="fa-solid fa-passport"></i>
+
+</div>
+
+<h3>
+
+Visa & Carte de séjour
+
+</h3>
+
+<p>
+
+Après votre admission, nous vous accompagnons dans toute la procédure de visa et de carte de séjour en Lituanie.
+
+</p>
+
+<ul>
+
+<li><i class="fa-solid fa-check"></i> Création du compte Migris</li>
+
+<li><i class="fa-solid fa-check"></i> Vérification des documents</li>
+
+<li><i class="fa-solid fa-check"></i> Authentification du casier judiciaire</li>
+
+<li><i class="fa-solid fa-check"></i> Dépôt du dossier VFS</li>
+
+<li><i class="fa-solid fa-check"></i> Suivi jusqu'à la décision</li>
+
+</ul>
+
+<a href="visaLituanie.html" class="card-btn">
+
+ Commencer la procédure Visa
+
+</a>
+
+</div>
+
+</div>
+
+</div>
+
+</section>
+
+<section class="why">
+
+<div class="title">
+
+<h2>
+
+Pourquoi choisir YASSAD TRAVEL ?
+
+</h2>
+
+<p>
+
+Un accompagnement professionnel, personnalisé et sécurisé pour réussir votre projet d'études.
+
+</p>
+
+</div>
+
+<div class="features">
+
+<div class="feature">
+
+<i class="fa-solid fa-user-graduate"></i>
+
+<h4>Suivi personnalisé</h4>
+
+<p>Chaque étudiant bénéficie d'un accompagnement adapté à son projet.</p>
+
+</div>
+
+<div class="feature">
+
+<i class="fa-solid fa-file-circle-check"></i>
+
+<h4>Dossier conforme</h4>
+
+<p>Nous vérifions chaque document afin d'éviter les erreurs.</p>
+
+</div>
+
+<div class="feature">
+
+<i class="fa-solid fa-headset"></i>
+
+<h4>Disponibilité</h4>
+
+<p>Notre équipe reste disponible avant, pendant et après la procédure.</p>
+
+</div>
+
+<div class="feature">
+
+<i class="fa-solid fa-earth-europe"></i>
+
+<h4>Jusqu'au départ</h4>
+
+<p>Nous vous accompagnons jusqu'à votre arrivée en Lituanie.</p>
+
+</div>
+
+</div>
+
+</section>
+
+<section>
+
+<div class="cta">
+
+<h2>
+
+🇱🇹 Votre aventure commence aujourd'hui
+
+</h2>
+
+<p>
+
+Choisissez votre procédure et commencez votre projet d'études en Lituanie avec YASSAD TRAVEL.
+
+</p>
+
+<a href="#choix" class="hero-btn">
+
+Commencer maintenant
+
+</a>
+
+</div>
+
+</section>
+
+<footer>
+
+© 2026 YASSAD TRAVEL — Étudier en Lituanie
+
+</footer>
+
+</body>
+
+</html>

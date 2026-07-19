@@ -1,0 +1,805 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>ParcourSup - YASSAD TRAVEL</title>
+
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+
+<style>
+
+*{
+margin:0;
+padding:0;
+box-sizing:border-box;
+font-family:'Poppins',sans-serif;
+}
+
+body{
+background:#F8F5F1;
+color:#1e293b;
+line-height:1.7;
+}
+
+.container{
+width:90%;
+max-width:1200px;
+margin:auto;
+}
+
+:root{
+--primary:#beaa71;
+--secondary:#d8d8d8;
+--gold:#D4AF37;
+--white:#ffffff;
+--light:#f7f9fc;
+}
+
+/* HERO */
+
+.hero{
+background:linear-gradient(135deg,#f5e1a2,#000000);
+color:white;
+padding:100px 0;
+text-align:center;
+
+}
+
+.hero h1{
+font-size:3rem;
+margin-bottom:20px;
+font-weight:800;
+
+}
+
+.hero p{
+max-width:800px;
+margin:auto;
+font-size:1.15rem;
+opacity:.95;
+}
+
+.hero-buttons{
+margin-top:35px;
+}
+
+.btn{
+display:inline-block;
+padding:15px 30px;
+border-radius:50px;
+text-decoration:none;
+font-weight:600;
+margin:10px;
+transition:.3s;
+}
+
+.btn-primary{
+background:var(--gold);
+color:#000;
+}
+
+.btn-primary:hover{
+transform:translateY(-3px);
+}
+
+.btn-secondary{
+background:white;
+color:var(--primary);
+}
+
+/* SECTION */
+
+section{
+padding:80px 0;
+}
+
+.section-title{
+text-align:center;
+font-size:2.2rem;
+margin-bottom:20px;
+color:var(--primary);
+font-weight:700;
+}
+
+.section-subtitle{
+text-align:center;
+max-width:700px;
+margin:auto;
+margin-bottom:50px;
+color:#64748b;
+}
+
+/* TIMELINE */
+
+.timeline{
+display:grid;
+grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
+gap:25px;
+}
+
+.step{
+background:white;
+padding:30px;
+border-radius:20px;
+box-shadow:0 8px 30px rgba(0,0,0,.08);
+text-align:center;
+}
+
+.step-number{
+width:60px;
+height:60px;
+background:var(--gold);
+border-radius:50%;
+display:flex;
+align-items:center;
+justify-content:center;
+font-size:1.4rem;
+font-weight:bold;
+margin:auto;
+margin-bottom:20px;
+}
+
+/* SERVICES */
+
+.cards{
+display:grid;
+grid-template-columns:repeat(auto-fit,minmax(300px,1fr));
+gap:25px;
+}
+
+.card{
+background:white;
+padding:35px;
+border-radius:20px;
+box-shadow:0 8px 30px rgba(0,0,0,.08);
+}
+
+.card h3{
+color:var(--primary);
+margin-bottom:15px;
+}
+
+.card ul{
+list-style:none;
+}
+
+.card li{
+margin-bottom:10px;
+}
+
+/* ELIGIBILITY */
+
+.eligibility{
+display:grid;
+grid-template-columns:repeat(auto-fit,minmax(400px,1fr));
+gap:30px;
+}
+
+.box{
+background:white;
+padding:35px;
+border-radius:20px;
+box-shadow:0 8px 30px rgba(0,0,0,.08);
+}
+
+.box h3{
+color:var(--primary);
+margin-bottom:20px;
+}
+.box-center{
+grid-column:1 / -1;
+max-width:500px;
+margin:0 auto;
+}
+
+/* PRICING */
+
+.pricing{
+display:grid;
+grid-template-columns:repeat(auto-fit,minmax(350px,1fr));
+gap:30px;
+}
+
+.price-card{
+    background:white;
+    padding:40px;
+    border-radius:20px;
+    box-shadow:0 8px 30px rgba(0,0,0,.08);
+
+    display:flex;
+    flex-direction:column;
+    justify-content:center; /* Centre verticalement */
+    align-items:center;     /* Centre horizontalement */
+
+    text-align:center;
+    min-height:520px;       /* même hauteur que l'autre carte */
+}
+
+.price{
+font-size:2.3rem;
+font-weight:800;
+color:var(--gold);
+margin:20px 0;
+}
+
+/* PAYMENT */
+
+.payment{
+background:white;
+padding:40px;
+border-radius:20px;
+box-shadow:0 8px 30px rgba(0,0,0,.08);
+}
+
+
+
+/* WHATSAPP */
+
+.whatsapp{
+display:inline-block;
+background:#25D366;
+color:white !important;
+padding:15px 35px;
+border-radius:50px;
+text-decoration:none;
+font-weight:600;
+margin-top:20px;
+transition:all .3s ease;
+box-shadow:0 10px 25px rgba(37,211,102,.25);
+}
+
+.whatsapp:hover{
+transform:translateY(-3px);
+box-shadow:0 15px 35px rgba(37,211,102,.35);
+}
+
+footer{
+text-align:center;
+padding:30px;
+color:#64748b;
+}
+.payment{
+background:white;
+padding:50px;
+border-radius:25px;
+box-shadow:0 10px 35px rgba(0,0,0,.08);
+}
+
+.cta{
+background:linear-gradient(135deg,#c7bd92,#d8dade);
+color:white;
+padding:70px 50px;
+border-radius:30px;
+text-align:center;
+box-shadow:0 20px 45px rgba(0,0,0,.15);
+}
+
+.cta h2{
+font-size:2.2rem;
+margin-bottom:20px;
+font-weight:700;
+}
+
+.cta p{
+max-width:850px;
+margin:auto;
+line-height:1.9;
+font-size:1.05rem;
+}
+
+.btn-payment{
+display:inline-block;
+margin-top:35px;
+background : linear-gradient(135deg,#ab942d,#6078a9);
+color:#f7f2f2;
+padding:18px 40px;
+border-radius:50px;
+text-decoration:none;
+font-weight:700;
+font-size:1rem;
+transition:.3s;
+box-shadow:0 10px 30px rgba(125, 116, 89, 0.35);
+}
+
+.btn-payment:hover{
+transform:translateY(-4px);
+box-shadow:0 15px 40px rgba(212,175,55,.45);
+}
+
+.cta-note{
+margin-top:30px !important;
+font-size:15px;
+opacity:.95;
+line-height:2;
+}
+
+.payment-section{
+margin-bottom:60px;
+}
+
+/* Animation titre ParcourSup */
+
+.hero h1{
+    font-size:3rem;
+    margin-bottom:20px;
+    font-weight:800;
+    animation: titleAnimation 2s ease-in-out infinite alternate;
+    text-shadow:0 0 15px rgba(212,175,55,0.7);
+}
+
+
+/* mouvement + effet lumière */
+
+@keyframes titleAnimation{
+
+    0%{
+        transform:translateY(0) scale(1);
+        opacity:0.8;
+        letter-spacing:2px;
+    }
+
+    100%{
+        transform:translateY(-10px) scale(1.05);
+        opacity:1;
+        letter-spacing:5px;
+    }
+
+}
+
+/* =========================
+   RESPONSIVE
+========================= */
+
+@media (max-width:900px){
+
+.hero{
+padding:70px 25px;
+}
+
+.hero h1{
+font-size:2.2rem;
+}
+
+.hero p{
+font-size:1rem;
+}
+
+.hero-buttons{
+display:flex;
+flex-direction:column;
+align-items:center;
+}
+
+.btn{
+width:100%;
+max-width:320px;
+text-align:center;
+}
+
+.timeline,
+.cards,
+.eligibility,
+.pricing{
+grid-template-columns:1fr;
+}
+
+.box-center{
+max-width:100%;
+}
+
+.price-card,
+.card,
+.box,
+.step,
+.payment{
+padding:25px;
+}
+
+.cta{
+padding:45px 25px;
+}
+
+.cta h2{
+font-size:1.8rem;
+}
+
+.btn-payment{
+width:100%;
+text-align:center;
+}
+
+.section-title{
+font-size:1.9rem;
+}
+
+section{
+padding:60px 0;
+}
+
+}
+
+@media (max-width:600px){
+
+.container{
+width:92%;
+}
+
+.hero{
+padding:60px 18px;
+}
+
+.hero h1{
+font-size:1.8rem;
+}
+
+.hero p{
+font-size:.95rem;
+line-height:1.8;
+}
+
+.step-number{
+width:50px;
+height:50px;
+font-size:1.2rem;
+}
+
+.price{
+font-size:2rem;
+}
+
+.cta{
+padding:35px 20px;
+}
+
+.cta h2{
+font-size:1.5rem;
+}
+
+.cta p{
+font-size:.95rem;
+}
+
+.btn-payment{
+padding:16px;
+font-size:.95rem;
+}
+
+.whatsapp{
+width:100%;
+text-align:center;
+}
+
+footer{
+font-size:14px;
+padding:25px 15px;
+}
+.box h3,
+.step h3,
+.price-card h3{
+    font-size:1.2rem;
+}
+
+.box p,
+.step p,
+.price-card p,
+.box li{
+    font-size:.95rem;
+}
+
+.price-card{
+    padding:22px;
+}
+
+.step{
+    padding:22px;
+}
+
+.box{
+    padding:22px;
+}
+
+}
+</style>
+</head>
+
+<body>
+
+<section class="hero">
+
+<div class="container">
+
+<h1>🎓 ParcourSup</h1>
+
+<p>
+ParcourSup est la plateforme officielle d'admission dans l'enseignement supérieur français. Elle permet aux titulaires d'un baccalauréat étranger de candidater à de nombreuses formations telles que les BTS, CPGE (classes préparatoires), certificats de spécialisation, instituts de formation en soins infirmiers (IFSI) et autres formations post-bac.
+Elle permet également aux étudiants titulaires d'un baccalauréat français, ou actuellement en Terminale préparant le baccalauréat français, de candidater pour intégrer une première année de Licence (L1) dans les établissements d'enseignement supérieur français.
+Nous vous accompagnons à chaque étape de votre candidature : choix des formations, constitution du dossier, rédaction des projets motivés et suivi des vœux, afin d'optimiser vos chances d'admission. 🚀
+
+</p>
+
+<div class="hero-buttons">
+
+<a href="#accompagnement" class="btn btn-primary">
+Commencer ma procédure
+</a>
+
+<a href="#tarifs" class="btn btn-secondary">
+Voir les tarifs
+</a>
+
+</div>
+
+</div>
+
+</section>
+
+<section>
+
+<div class="container">
+
+<h2 class="section-title">
+Comment fonctionne la procédure ParcourSup ?
+</h2>
+
+<p class="section-subtitle">
+Un parcours simple et structuré pour maximiser vos chances d'admission.
+</p>
+
+<div class="timeline">
+
+<div class="step">
+<div class="step-number">1</div>
+<h3>Création du dossier</h3>
+<p>- Création du compte ParcourSup</p>
+<p>- Remplissage du dossier ParcourSup</p>
+</div>
+
+<div class="step">
+<div class="step-number">2</div>
+<h3> Préparation des documents</h3>
+<p>- Vérification et classement des documents</p>
+<p>- Vérification des traductions</p>
+</div>
+
+<div class="step">
+<div class="step-number">3</div>
+<h3>Rédaction du projet</h3>
+<p>- Rédaction du projet d'études</p>
+<p>- Rédaction du projet professionnel</p>
+</div>
+
+<div class="step">
+<div class="step-number">4</div>
+<h3>Accompagnement personnalisé</h3>
+<p>- Conseils personnalisés</p>
+<p>- Suivi du dossier jusqu'à validation</p>
+<p>- Choix de formation</p>
+
+</div>
+
+</div>
+
+</div>
+
+</section>
+
+
+<section>
+
+<div class="container">
+
+<h2 class="section-title">
+Conditions d'éligibilité
+</h2>
+
+<div class="eligibility">
+
+<div class="box">
+
+<h3>👨‍🎓 Toute personne</h3>
+<p>	souhaitant intégrer un BTS, une CPGE (classe préparatoire) ou un certificat de spécialisation en France doit être :</p>
+
+<ul>
+<li> Titulaire du baccalauréat</li>
+
+<li> Étudiant(e) en L1, L2 ou L3</li>
+</ul>
+
+</div>
+
+<div class="box">
+
+<h3>👨‍🎓 Toute personne</h3>
+<p> souhaitant intégrer un IFSI en France doit être: </p>
+
+<ul>
+<li> Étudiant(e) ou diplômé(e) en soins infirmiers ou dans un domaine médical </li>
+
+<li> Ou justifier d'un parcours ou d'une expérience dans le secteur de la santé</li>
+</ul>
+
+</div>
+
+<div class=" box box-center">
+
+<h3>👨‍🎓 Toute personne</h3>
+<p> souhaitant intégrer une première année Licence: </p>
+
+<ul>
+<li> Étudiant(e) titulaire d'un baccalauréat français, ou actuellement en Terminale préparant le baccalauréat français  </li>
+
+</ul>
+
+</div>
+
+</div>
+
+</div>
+
+</section>
+
+<section id="tarifs">
+
+<div class="container">
+
+<h2 class="section-title">
+💰 Tarifs
+</h2>
+
+<div class="pricing">
+
+<div class="price-card">
+
+<h3>Frais universitaires</h3>
+<P>susceptibles d'être modifiés selon les mises à jour des établissements et des autorités françaises</P>
+
+
+<p>À partir de</p>
+
+<div class="price">170 €</div>
+
+
+
+
+
+
+
+
+</div>
+
+<div class="price-card">
+
+<h3>Accompagnement YASSAD TRAVEL</h3>
+
+<div class="price">
+17 000 DA
+</div>
+
+<p>
+≈ 60 €
+</p>
+<p>(non remboursables)</p>
+<br>
+
+<p>
+Accompagnement complet,
+suivi personnalisé et assistance jusqu'à validation.
+</p>
+
+<p>Frais complémentaires : 5 000 DA (≈ 20 €)
+(à régler uniquement après l'obtention de votre admission).</p>
+<p>- Validation et finalisation de votre compte PASTEL.</p>
+<p>- Préparation personnalisée à l'entretien Campus France avec un conseiller YASSAD TRAVEL, lors d'une session en visioconférence (Google Meet), avant votre entretien officiel.</p>
+
+</div>
+
+</div>
+
+</div>
+
+</section>
+
+
+
+<section>
+
+<div class="container">
+
+
+<div class="container">
+
+
+<div class="container">
+
+<div class="cta">
+
+<h2>
+🎓 Prêt à commencer votre projet d'études en France ?
+</h2>
+
+<p>
+Pour finaliser votre inscription à notre accompagnement Campus France,
+consultez nos coordonnées de paiement puis effectuez votre règlement.
+
+Une fois le paiement effectué, il vous suffira d'envoyer votre reçu via WhatsApp afin que nous puissions ouvrir votre dossier et débuter votre accompagnement.
+</p>
+
+<a
+href="documents/coordonnees-paiement-yassad-travel.pdf"
+target="_blank"
+class="btn-payment">
+
+📄 Télécharger les coordonnées de paiement
+
+</a>
+
+<p class="cta-note">
+
+1️⃣ Téléchargez les coordonnées de paiement<br>
+2️⃣ Effectuez votre règlement<br>
+3️⃣ Envoyez votre reçu via WhatsApp<br>
+4️⃣ Nous confirmons votre inscription
+
+</p>
+
+</div>
+
+</div>
+
+</section>
+
+
+<section class="payment-section">
+
+<div class="container">
+
+<div class="payment">
+
+<h2 class="section-title">
+💳 Paiement et envoi du reçu
+</h2>
+
+<p style="text-align:center;max-width:800px;margin:auto;">
+Une fois votre paiement effectué, envoyez votre justificatif via WhatsApp afin que notre équipe puisse vérifier votre règlement et lancer immédiatement votre accompagnement Campus France.
+</p>
+
+<div style="text-align:center;margin-top:30px;">
+
+<a
+href="https://wa.me/213549462589"
+target="_blank"
+class="whatsapp">
+
+📲 Envoyer mon reçu sur WhatsApp
+
+</a>
+
+</div>
+
+<p style="
+margin-top:25px;
+text-align:center;
+font-size:14px;
+color:#64748b;
+">
+Notre équipe confirme généralement les inscriptions sous 24 heures.
+</p>
+
+</div>
+
+</div>
+
+</section>
+
+
+
+<footer>
+
+© 2026 YASSAD TRAVEL — Accompagnement Campus France
+
+</footer>
+
+</body>
+</html>
